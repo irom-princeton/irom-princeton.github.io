@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research · IRoM Lab · Princeton</title>
+  <link rel="icon" href="assets/img/logos/irom_lab_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/research.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script defer src="js/site.js"></script>
+</head>
+<body data-page="research">
+  <header id="site-header" class="site-header"></header>
+  <main class="irom-research">
+    <div class="wrap" style="padding-top:24px;padding-bottom:80px">
+
+      <div class="research-hero">
+        <h1>Research</h1>
+        <p class="research-tag">Building the foundations for generalist robots that are safe, trustworthy, and capable.</p>
+      </div>
+
+      <div class="mission">
+        <div class="m-label">Our mission</div>
+        <p><span class="lead">We are working toward generalist robots that contribute usefully and deeply to society.</span> To get there, we pursue foundational research on robots that are <em>helpful, safe, and trustworthy</em> while generalizing to novel tasks and human-centered environments.</p>
+      </div>
+
+      <div class="talk">
+        <a class="thumb" href="https://youtu.be/wbowx_l_Gk4" target="_blank" rel="noopener">
+          <img src="assets/research/talk_thumb.jpg" alt="Research talk thumbnail" />
+          <span class="pbtn" aria-hidden="true"></span>
+        </a>
+        <div class="t-body">
+          <div class="t-label">Recent talk</div>
+          <h3>Trustworthy World Models for Safe Generalist Robots</h3>
+          <p>Presentation at MILA (Spring 2026).</p>
+          <a class="watch" href="https://youtu.be/wbowx_l_Gk4" target="_blank" rel="noopener">Watch on YouTube →</a>
+        </div>
+      </div>
+
+      <h1 class="sec-title">Research bets</h1>
+      <p class="bet">We are betting that the technical path to truly helpful robots runs through <span class="hl">world models</span>.</p>
+
+      <div class="horizon" aria-hidden="true">
+        <div class="cell now"><span>OBSERVED · t<sub>0</sub></span><span class="tick"></span></div>
+        <div class="cell pred"><span>t+1</span><span class="tick"></span></div>
+        <div class="cell pred"><span>t+2</span><span class="tick"></span></div>
+        <div class="cell pred"><span>t+3</span><span class="tick"></span></div>
+        <div class="cell pred"><span>t+H</span><span class="tick"></span></div>
+      </div>
+
+      <div class="why-lead">Why world models?</div>
+      <p class="why-body">Predictive models of the world are fundamental to robotics. Yet despite decades of investment in physics-based simulation, we still have no models that can endow robots with general manipulation skills. Our bet is that <b>action-conditioned video generation models</b> can serve as general-purpose world models for robotics:</p>
+
+      <div class="caps">
+        <div class="cap">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><circle cx="12" cy="11" r="3.2"/><path d="M3 20h18"/></svg></span>
+          <h4>Photorealistic predictions</h4>
+          <p>They enable fine-grained simulation by rendering what the world will look like after an action.</p>
+        </div>
+        <div class="cap">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12H6.5"/><path d="M6.5 12c0-3 2-5 4.5-5.3"/><path d="M6.5 12c0 3 2 5 4.5 5.3"/><circle cx="15.5" cy="12" r="4.2"/></svg></span>
+          <h4>Physical interaction</h4>
+          <p>They simulate the hard, contact-rich dynamics that hand-built simulators struggle to capture.</p>
+        </div>
+        <div class="cap">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v4"/><path d="M12 20a7 7 0 1 0-6.9-8.3"/><path d="M4 8l1.1 3.7L8.7 10"/></svg></span>
+          <h4>Improve with data</h4>
+          <p>Unlike fixed physics engines, they scale with data and compute.</p>
+        </div>
+      </div>
+
+      <div class="why-lead">Our research roadmap</div>
+      <p class="why-close">We are pursuing fundamental breakthroughs that turn these capabilities into robots that <b>plan, evaluate and improve themselves, and stay safe while collaborating with humans.</b> Our research roadmap has three thrusts — <b>click any thrust to read concrete questions we are working on.</b></p>
+
+      <nav class="ribbon" aria-label="Research roadmap">
+        <button class="step" data-thrust="1" aria-expanded="true" aria-controls="thrust-1">
+          <span class="rk">Thrust <span class="dot">I</span></span>
+          <h3>Pre-training</h3>
+          <p>Train world models with data and representations that matter for actions.</p>
+          <div class="rq">Questions 1–3</div>
+        </button>
+        <button class="step" data-thrust="2" aria-expanded="false" aria-controls="thrust-2">
+          <span class="rk">Thrust <span class="dot">II</span></span>
+          <h3>Post-training</h3>
+          <p>Inherit what large pretrained models know; transfer to new robots fast.</p>
+          <div class="rq">Questions 4–6</div>
+        </button>
+        <button class="step" data-thrust="3" aria-expanded="false" aria-controls="thrust-3">
+          <span class="rk">Thrust <span class="dot">III</span></span>
+          <h3>Deployment</h3>
+          <p>Deploy trustworthy world models for red teaming, policy improvement, and safe planning.</p>
+          <div class="rq">Questions 7–9</div>
+        </button>
+      </nav>
+
+      <!-- THRUST I -->
+      <section class="stage thrust-panel" id="thrust-1">
+        <div class="stage-body">
+        <div class="stage-media">
+          <div class="video">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="assets/research/autonomous_play_hb.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="vcap">Autonomous play data collection for world models.</p>
+        </div>
+        <div class="stage-qs">
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q1</span><span class="qtitle">How do we collect the right data, at scale, to train high-fidelity world models?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">Internet video is abundant but action-free; robot data is action-rich but scarce. The open problem is <b>which data actually teaches physics</b> (e.g., autonomous play, human egocentric videos) and how to gather it at scale.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q2</span><span class="qtitle">How do we go beyond pixel prediction and learn task-relevant latent representations?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">Predicting every pixel wastes capacity on things a robot never needs to predict. We want models that <b>predict what matters for the task</b> and ignore irrelevant nuisances.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q3</span><span class="qtitle">What are the right architectures for omni-modal robotics models — language, vision, action, audio, touch?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">Robot models of the future will be omni-modal and flexibly conditioned. What are the <b>right architectural components</b> (e.g., diffusion, transformers) for such models, and how do we fuse them?</p>
+            </div>
+          </details>
+        </div>
+        </div>
+      </section>
+
+      <!-- THRUST II -->
+      <section class="stage thrust-panel" id="thrust-2" hidden>
+        <div class="stage-body">
+        <div class="stage-media">
+          <div class="video">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="assets/research/cross_emb_hb.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="vcap">Rapid adaptation to new embodiments.</p>
+        </div>
+        <div class="stage-qs">
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q4</span><span class="qtitle">How can we adapt pre-trained video models for accurate physical simulation?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">A video model renders plausible-looking motion, but we want world models that serve as <b>high-fidelity simulators</b>. The challenge is producing predictions accurate enough for the rich interactions in manipulation.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q5</span><span class="qtitle">How do we keep a video model's pretrained knowledge when fine-tuning it into a world model?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">A video model already understands objects, gravity, and occlusion. The goal is to <b>specialize these models for robotics</b> while retaining as much of the core pre-trained understanding as possible.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q6</span><span class="qtitle">Can we generalize a world model to a new embodiment with under 30 minutes of play data?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">Every new robot usually means a new dataset. We're targeting <b>minutes, not weeks</b> of fine-tuning for a new robotic embodiment.</p>
+            </div>
+          </details>
+        </div>
+        </div>
+      </section>
+
+      <!-- THRUST III -->
+      <section class="stage thrust-panel" id="thrust-3" hidden>
+        <div class="stage-body">
+        <div class="stage-media">
+          <div class="video">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="assets/research/box_hand_veo_hb.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="vcap">A video model rollout in a safety-sensitive scenario.</p>
+        </div>
+        <div class="stage-qs">
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q7</span><span class="qtitle">How do we rigorously quantify a world model's uncertainty for robust RL, planning, and evaluation?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">A model that's confidently wrong is dangerous. Calibrated uncertainty tells a planner <b>when to trust the dream</b> and when to fall back on reality.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q8</span><span class="qtitle">How do we combine a little real-world data with world models to red-team and improve policies?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">Real failures are rare and expensive to find. A world model can <b>(1) manufacture the edge cases</b> a policy would otherwise only meet in deployment, and <b>(2) iteratively improve the policy</b> on these scenarios.</p>
+            </div>
+          </details>
+          <details class="q">
+            <summary class="qhead"><span class="qtag">Q9</span><span class="qtitle">How do we train world models that predict rewards for assessing task progress and safety?</span><span class="chev"></span></summary>
+            <div class="qpanel">
+              <p class="why">A world model that also predicts reward can <b>judge its own rollouts</b> — scoring whether a task is progressing and whether an action is safe. Both are hard: reward for contact-rich manipulation resists hand-design, and safety judgments need the very failures we hope never happen.</p>
+            </div>
+          </details>
+        </div>
+        </div>
+      </section>
+
+      <div class="themes-sec">
+        <h1 class="sec-title">Research themes &amp; philosophy</h1>
+        <div class="themes">
+          <div class="theme">
+            <span class="ic" aria-hidden="true"><img src="assets/research/compass_icon.png" alt="" /></span>
+            <h4>Fundamental research</h4>
+            <p>In an age where heuristics dominate robotics and AI, we believe foundational research is what enables long-term progress. We draw on a broad theoretical and algorithmic toolkit, and tackle core technical challenges across application domains.</p>
+          </div>
+          <div class="theme">
+            <span class="ic" aria-hidden="true"><img src="assets/research/wrench_icon.png" alt="" /></span>
+            <h4>Hardware loop</h4>
+            <p>A tight feedback loop between theory and hardware keeps us honest: it exposes hidden assumptions, motivates new questions, convinces others of our ideas, and often points the way to novel solutions. We are supported by <a href="facilities.html">two dedicated lab spaces</a>, <a href="https://robo.princeton.edu/facilities" target="_blank" rel="noopener">shared experimental facilities</a>, and a number of hardware testbeds.</p>
+          </div>
+          <div class="theme">
+            <span class="ic" aria-hidden="true"><img src="assets/research/collab_icon.png" alt="" /></span>
+            <h4>Collaborations</h4>
+            <p>We actively collaborate with industry partners including Google DeepMind, the Toyota Research Institute, NVIDIA, Waymo, and Physical Intelligence — letting us develop and test ideas at a scale rarely feasible in academia alone, with industry-scale compute, robot hardware, large datasets, and domain expertise.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script>
+    (function () {
+      var steps = document.querySelectorAll('.ribbon .step');
+      steps.forEach(function (step) {
+        step.addEventListener('click', function () {
+          var id = step.getAttribute('aria-controls');
+          var panel = document.getElementById(id);
+          var isOpen = step.getAttribute('aria-expanded') === 'true';
+
+          // close all
+          steps.forEach(function (s) { s.setAttribute('aria-expanded', 'false'); });
+          document.querySelectorAll('.thrust-panel').forEach(function (p) { p.hidden = true; });
+
+          // open the clicked one (unless it was already open — then leave all closed).
+          // The panel renders directly beneath the ribbon, so we expand it in
+          // place rather than scrolling — a forced scroll felt like a page jump.
+          if (!isOpen) {
+            step.setAttribute('aria-expanded', 'true');
+            panel.hidden = false;
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

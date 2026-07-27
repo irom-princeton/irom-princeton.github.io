@@ -1,0 +1,782 @@
+# ─────────────────────────────────────────────────────────────
+# Publications. Single source of truth — used by publications.html,
+# the homepage highlights, and research-area pages.
+#
+# Required:   id, title, authors, venue, year
+# Optional:   links: { arxiv, pdf, project, code, video, blog, journal, demo }
+#             thumbnail   (assets/img/publications/<file>)
+#             awards      (list of strings)
+#             notes       (string, shown in italics)
+#             status      (e.g. "Under Review"). Omit for published work.
+#             type        ("conference" | "journal" | "preprint" | "tech_report" | "thesis")
+#                         Defaults to "conference".
+# ─────────────────────────────────────────────────────────────
+
+
+- id: beyond_binary
+  type: preprint
+  title: "Beyond Binary Success: Sample-Efficient and Statistically Rigorous Robot Policy Comparison"
+  thumbnail: "assets/img/publications/beyond_binary.png"
+  authors: ["David Snyder", "Apurva Badithela", "Nikolai Matni", "George Pappas", "Anirudha Majumdar", "Masha Itkina", "Haruki Nishimura"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2026
+  links: { arxiv: "https://arxiv.org/abs/2603.13616" }
+
+- id: playworld
+  status: "Under Review"
+  type: preprint
+  title: "PlayWorld: Learning Robot World Models from Autonomous Play"
+  authors: ["Tenny Yin", "Zhiting Mei", "Zhonghe Zheng", "Miyu Yamane", "David Wang", "Jade Sceats", "Samuel M. Bateman", "Lihan Zha", "Apurva Badithela", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2603.09030"
+    project: "https://robot-playworld.github.io/"
+  thumbnail: "assets/img/publications/playworld.png"
+
+- id: lap
+  type: preprint
+  title: "LAP: Language-Action Pre-training Enables Zero-Shot Cross-Embodiment Transfer"
+  authors: ["Lihan Zha", "Asher Hancock", "Mingtong Zhang", "Tenny Yin", "Yixuan Huang", "Dhruv Shah", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2602.10556"
+    project: "https://lap-vla.github.io/"
+  thumbnail: "assets/img/publications/lap.png"
+
+- id: video_models_survey
+  status: "Under Review"
+  type: preprint
+  title: "Video Generation Models in Robotics: Applications, Research Challenges, Future Directions"
+  thumbnail: "assets/img/publications/video_models_survey.png"
+  authors: ["Zhiting Mei", "Tenny Yin", "Ola Shorinwa", "Apurva Badithela", "Zhonghe Zheng", "Joseph Bruno", "Madison Bland", "Lihan Zha", "Asher Hancock", "Jaime Fernández Fisac", "Philip Dames", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2026
+  links: { arxiv: "https://arxiv.org/abs/2601.07823" }
+
+- id: actions_as_language
+  title: "Actions as Language: Fine-Tuning VLMs into VLAs Without Catastrophic Forgetting"
+  authors: ["Asher J. Hancock", "Xindi Wu", "Lihan Zha", "Olga Russakovsky", "Anirudha Majumdar"]
+  venue: "International Conference on Learning Representations (ICLR)"
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2509.22195"
+    project: "https://vlm2vla.github.io/"
+  thumbnail: "assets/img/publications/actions_as_language.png"
+
+- id: reasoning_uncertainty
+  title: "Reasoning about Uncertainty: Do Reasoning Models Know When They Don't Know?"
+  thumbnail: "assets/img/publications/reasoning_uncertainty.jpg"
+  authors: ["Zhiting Mei", "Christina Zhang", "Tenny Yin", "Justin Lidard", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "European Chapter of the Association for Computational Linguistics (EACL)"
+  year: 2026
+  links: { arxiv: "https://arxiv.org/abs/2506.18183" }
+
+- id: womap
+  title: "WoMAP: World Models for Embodied Open-Vocabulary Object Localization"
+  authors: ["Tenny Yin", "Zhiting Mei", "Tao Sun", "Lihan Zha", "Emily Zhou", "Jeremy Bao", "Miyu Yamane", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2506.01600"
+    project: "https://robot-womap.github.io/"
+    video: "https://www.youtube.com/watch?v=i1qSlALio-o"
+  thumbnail: "assets/img/publications/womap.png"
+
+- id: robot_constitutions
+  title: "Generating Robot Constitutions & Benchmarks for Semantic Safety"
+  thumbnail: "assets/img/publications/robot_constitutions.jpg"
+  authors: ["Pierre Sermanet", "Anirudha Majumdar", "Alex Irpan", "Dmitry Kalashnikov", "Vikas Sindhwani"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2503.08663"
+    project: "https://asimov-benchmark.github.io/v1/"
+
+- id: predictive_red_teaming
+  title: "Predictive Red Teaming: Breaking Policies Without Breaking Robots"
+  authors: ["Anirudha Majumdar", "Mohit Sharma", "Dmitry Kalashnikov", "Sumeet Singh", "Pierre Sermanet", "Vikas Sindhwani"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2502.06575"
+    project: "https://predictive-red-team.github.io/"
+  thumbnail: "assets/img/publications/predictive_red_teaming.png"
+
+- id: siren
+  title: "SIREN: Semantic, Initialization-Free Registration of Multi-Robot Gaussian Splatting Maps"
+  thumbnail: "assets/img/publications/siren.png"
+  authors: ["Ola Shorinwa", "Jiankai Sun", "Mac Schwager", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2025
+  links: { arxiv: "https://arxiv.org/abs/2502.06519" }
+
+- id: uq_survey
+  title: "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions"
+  thumbnail: "assets/img/publications/uq_survey.png"
+  authors: ["Ola Shorinwa", "Zhiting Mei", "Justin Lidard", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "ACM Computing Surveys"
+  year: 2025
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/2412.05563" }
+
+- id: flash_stu
+  title: "Flash STU: Fast Spectral Transform Units"
+  thumbnail: "assets/img/publications/flash_stu.png"
+  authors: ["Y. Isabel Liu", "Windsor Nguyen", "Yagiz Devre", "Evan Dogariu", "Anirudha Majumdar", "Elad Hazan"]
+  venue: "IEEE Conference on Decision and Control (CDC)"
+  year: 2025
+  links: { arxiv: "https://arxiv.org/abs/2409.10489" }
+
+- id: policy_comparison
+  title: "Is Your Imitation Learning Policy Better than Mine? Policy Comparison with Near-Optimal Stopping"
+  thumbnail: "assets/img/publications/policy_comparison.png"
+  authors: ["David Snyder", "Asher James Hancock", "Apurva Badithela", "Emma Dixon", "Patrick Miller", "Rares Andrei Ambrus", "Anirudha Majumdar", "Masha Itkina", "Haruki Nishimura"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2025
+  links: { arxiv: "https://arxiv.org/abs/2503.10966v1" }
+
+- id: dppo
+  title: "Diffusion Policy Policy Optimization"
+  authors: ["Allen Z. Ren", "Justin Lidard", "Lars L. Ankile", "Anthony Simeonov", "Pulkit Agrawal", "Anirudha Majumdar", "Benjamin Burchfiel", "Hongkai Dai", "Max Simchowitz"]
+  venue: "International Conference on Learning Representations (ICLR)"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2409.00588"
+    project: "https://diffusion-ppo.github.io/"
+    code: "https://github.com/irom-lab/dppo"
+  thumbnail: "assets/img/publications/dppo.png"
+
+- id: byovla
+  title: "Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust"
+  authors: ["Asher J. Hancock", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2410.01971"
+    project: "https://aasherh.github.io/byovla/"
+    code: "https://github.com/irom-lab/byovla"
+    video: "https://www.youtube.com/watch?v=9PXC1tnD91g"
+  thumbnail: "assets/img/publications/byovla.png"
+
+- id: task_driven_dist_shift
+  title: "Task-Driven Detection of Distribution Shifts with Statistical Guarantees for Robot Learning"
+  thumbnail: "assets/img/publications/task_driven_dist_shift.png"
+  authors: ["Alec Farid", "Sushant Veer", "Divyanshu Pachisia", "Anirudha Majumdar"]
+  venue: "IEEE Transactions on Robotics (T-RO)"
+  year: 2025
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/2106.13703" }
+
+- id: c_cubed
+  status: "Under Review"
+  type: preprint
+  title: "World Models That Know When They Don't Know: Controllable Video Generation with Calibrated Uncertainty"
+  thumbnail: "assets/img/publications/c_cubed.png"
+  authors: ["Zhiting Mei", "Tenny Yin", "Micah Baker", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2512.05927"
+    project: "https://c-cubed-uq.github.io/"
+
+- id: s_qubed
+  status: "Under Review"
+  type: preprint
+  title: "How Confident are Video Models? Empowering Video Models to Express their Uncertainty"
+  thumbnail: "assets/img/publications/s_qubed.png"
+  authors: ["Zhiting Mei", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://www.arxiv.org/abs/2510.02571"
+    project: "https://s-qubed.github.io/"
+    code: "https://github.com/irom-princeton/s-qubed"
+
+- id: spine
+  status: "Under Review"
+  type: preprint
+  title: "Geometry Meets Vision: Revisiting Pretrained Semantics in Distilled Fields"
+  thumbnail: "assets/img/publications/spine.png"
+  authors: ["Zhiting Mei", "Ola Shorinwa", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2510.03104"
+    project: "https://spine-geo.github.io/"
+    code: "https://github.com/irom-princeton/spine"
+
+- id: suresim
+  status: "Under Review"
+  type: preprint
+  title: "Reliable and Scalable Robot Policy Evaluation with Imperfect Simulators"
+  thumbnail: "assets/img/publications/suresim.png"
+  authors: ["Apurva Badithela", "David Snyder", "Lihan Zha", "Joseph Mikhail", "Matthew O'Kelly", "Anushri Dixit", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2025
+  awards: ["Best Paper Award — Eval&Deploy Workshop at CoRL 2025"]
+  links:
+    pdf: "https://arxiv.org/pdf/2510.04354"
+    project: "https://suresim-robot-eval.github.io/"
+
+- id: asimov_v2
+  status: "Under Review"
+  type: preprint
+  title: "Can AI Perceive Physical Danger and Intervene?"
+  thumbnail: "assets/img/publications/asimov_v2.jpg"
+  authors: ["Abhishek Jindal", "Dmitry Kalashnikov", "Oscar Chang", "Divya Garikapati", "Anirudha Majumdar", "Pierre Sermanet", "Vikas Sindhwani"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2509.21651"
+    project: "https://asimov-benchmark.github.io/v2/"
+
+- id: verdi
+  status: "Under Review"
+  type: preprint
+  title: "VERDI: VLM-Embedded Reasoning for Autonomous Driving"
+  thumbnail: "assets/img/publications/verdi.jpg"
+  authors: ["Bowen Feng", "Zhiting Mei", "Baiang Li", "Julian Ost", "Roger Girgis", "Anirudha Majumdar", "Felix Heide"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2505.15925"
+    project: "https://verdi-driving.github.io/"
+
+- id: factored
+  status: "Under Review"
+  type: preprint
+  title: "Guiding Data Collection via Factored Scaling Curves"
+  authors: ["Lihan Zha", "Apurva Badithela", "Michael Zhang", "Justin Lidard", "Jeremy Bao", "Emily Zhou", "David Snyder", "Allen Z. Ren", "Dhruv Shah", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2505.07728"
+    project: "https://factored-data-scaling.github.io/"
+  thumbnail: "assets/img/publications/factored.png"
+
+- id: scifi_benchmark
+  status: "Under Review"
+  type: preprint
+  title: "SciFi-Benchmark: How Would AI-Powered Robots Behave in Science Fiction Literature?"
+  thumbnail: "assets/img/publications/scifi_benchmark.png"
+  authors: ["Pierre Sermanet", "Anirudha Majumdar", "Vikas Sindhwani"]
+  venue: "Preprint"
+  year: 2025
+  links: { arxiv: "https://arxiv.org/abs/2503.10706" }
+
+- id: deceptive_risk
+  type: tech_report
+  title: "Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors"
+  thumbnail: "assets/img/publications/deceptive_risk.jpg"
+  authors: ["Anirudha Majumdar"]
+  venue: "Technical Report"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2509.12081"
+    project: "https://deceptive-risk.github.io/"
+
+- id: gemini_robotics_15
+  type: tech_report
+  title: "Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer"
+  thumbnail: "assets/img/publications/gemini_robotics_15.jpg"
+  authors: ["Gemini Robotics Team", "Google DeepMind"]
+  venue: "Google DeepMind Technical Report"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2510.03342"
+    blog: "https://deepmind.google/discover/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/"
+
+- id: gemini_robotics
+  type: tech_report
+  title: "Gemini Robotics: Bringing AI into the Physical World"
+  thumbnail: "assets/img/publications/gemini_robotics.jpg"
+  authors: ["Gemini Robotics Team", "Google DeepMind"]
+  venue: "Google DeepMind Technical Report"
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2503.20020"
+    blog: "https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/"
+
+- id: perceive_confidence
+  title: "Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception"
+  authors: ["Anushri Dixit", "Zhiting Mei", "Meghan Booker", "Mariko Storey-Matsutani", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2403.08185"
+    project: "https://perceive-with-confidence.github.io/"
+    code: "https://github.com/irom-lab/perception-guarantees"
+    video: "https://youtu.be/sztc832hw0c"
+  thumbnail: "assets/img/publications/perceive_confidence.png"
+
+- id: explore_eqa
+  title: "Explore until Confident: Efficient Exploration for Embodied Question Answering"
+  authors: ["Allen Z. Ren", "Jaden Clark", "Anushri Dixit", "Masha Itkina", "Anirudha Majumdar", "Dorsa Sadigh"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2403.15941"
+    project: "https://explore-eqa.github.io/"
+    code: "https://github.com/Stanford-ILIAD/explore-eqa"
+    video: "https://www.youtube.com/watch?v=Dn8WjF9gIiQ"
+  thumbnail: "assets/img/publications/explore_eqa.png"
+
+- id: risk_calibrated_hri
+  title: "Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction"
+  thumbnail: "assets/img/publications/risk_calibrated_hri.png"
+  authors: ["Justin Lidard", "Hang Pham", "Ariel Bachman", "Bryan Boateng", "Anirudha Majumdar"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2403.15959"
+    project: "https://risk-calibrated-planning.github.io/"
+    code: "https://github.com/irom-lab/risk_calibrated_interactive_planning"
+
+- id: foundation_models_robotics
+  title: "Foundation Models in Robotics: Applications, Challenges, and the Future"
+  thumbnail: "assets/img/publications/foundation_models_robotics.png"
+  authors: ["Roya Firoozi", "Johnathan Tucker", "Stephen Tian", "Anirudha Majumdar", "et al."]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2024
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/2312.07843" }
+
+- id: physically_grounded_vlm
+  title: "Physically Grounded Vision-Language Models for Robotic Manipulation"
+  thumbnail: "assets/img/publications/physically_grounded_vlm.jpg"
+  authors: ["Jensen Gao", "Bidipta Sarkar", "Fei Xia", "Ted Xiao", "Jiajun Wu", "Brian Ichter", "Anirudha Majumdar", "Dorsa Sadigh"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2309.02561"
+    project: "https://iliad.stanford.edu/pg-vlm/"
+
+- id: backward_planning
+  status: "Under Review"
+  type: preprint
+  title: "Thinking Forward and Backward: Effective Backward Planning with Large Language Models"
+  thumbnail: "assets/img/publications/backward_planning.png"
+  authors: ["Allen Z. Ren", "Brian Ichter", "Anirudha Majumdar"]
+  venue: "Preprint"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2411.01790"
+    code: "https://github.com/irom-princeton/llm-backward"
+
+- id: gemini_robotics_veo
+  type: tech_report
+  title: "Evaluating Gemini Robotics Policies in a Veo World Simulator"
+  thumbnail: "assets/img/publications/gemini_robotics_veo.png"
+  authors: ["Gemini Robotics Team", "Google DeepMind"]
+  venue: "Google DeepMind Technical Report"
+  year: 2024
+  links:
+    arxiv: "https://arxiv.org/abs/2512.10675"
+    project: "https://veo-robotics.github.io/"
+
+- id: pac_bayes_icp
+  title: "PAC-Bayes Generalization Certificates for Learned Inductive Conformal Prediction"
+  thumbnail: "assets/img/publications/pac_bayes_icp.png"
+  authors: ["Apoorva Sharma", "Sushant Veer", "Asher Hancock", "Heng Yang", "Marco Pavone", "Anirudha Majumdar"]
+  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2023
+  links:
+    arxiv: "https://arxiv.org/abs/2312.04658"
+    code: "https://github.com/NVlabs/pac-bayes-conformal-prediction"
+
+- id: mononav
+  title: "MonoNav: MAV Navigation via Monocular Depth Estimation and Reconstruction"
+  authors: ["Nathaniel Simon", "Anirudha Majumdar"]
+  venue: "International Symposium on Experimental Robotics (ISER)"
+  year: 2023
+  links:
+    arxiv: "https://arxiv.org/abs/2311.14100"
+    project: "https://natesimon.github.io/mononav/"
+  thumbnail: "assets/img/publications/mononav.png"
+
+- id: robot_help
+  title: "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners"
+  authors: ["Allen Z. Ren", "Anushri Dixit", "Alexandra Bodrova", "Sumeet Singh", "Stephen Tu", "Noah Brown", "Peng Xu", "Leila Takayama", "Fei Xia", "Jake Varley", "Zhenjia Xu", "Dorsa Sadigh", "Andy Zeng", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2023
+  links:
+    arxiv: "https://arxiv.org/abs/2307.01928"
+    project: "http://robot-help.github.io/"
+    code: "https://github.com/google-research/google-research/tree/master/language_model_uncertainty"
+    video: "https://www.youtube.com/watch?v=xCXx09gfhx4"
+    demo: "https://colab.research.google.com/drive/1EvAmHfFrasb_eALj4vWNMhwlJCdNfIAg?usp=sharing"
+  thumbnail: "assets/img/publications/robot_help.png"
+  awards:
+    - "Best Student Paper Award"
+    - "Oral Presentation"
+
+- id: adaptsim
+  title: "AdaptSim: Task-Driven Simulation Adaptation for Sim-to-Real Transfer"
+  thumbnail: "assets/img/publications/adaptsim.png"
+  authors: ["Allen Z. Ren", "Hongkai Dai", "Benjamin Burchfiel", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2023
+  links:
+    arxiv: "https://arxiv.org/abs/2302.04903"
+    project: "https://irom-lab.github.io/AdaptSim/"
+    code: "https://github.com/irom-lab/AdaptSim"
+    video: "https://www.youtube.com/watch?v=p2msMCOFDDg"
+
+- id: online_obstacle_avoidance
+  title: "Online Learning for Obstacle Avoidance"
+  authors: ["David Snyder", "Meghan Booker", "Nathaniel Simon", "Wenhan Xia", "Daniel Suo", "Elad Hazan", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2023
+  links: { arxiv: "https://arxiv.org/abs/2306.08776" }
+
+- id: sensor_based_limits_ijrr
+  title: "Fundamental Limits for Sensor-Based Robot Control"
+  thumbnail: "assets/img/publications/sensor_based_limits_ijrr.png"
+  authors: ["Anirudha Majumdar", "Zhiting Mei", "Vincent Pacelli"]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2023
+  type: journal
+  links:
+    arxiv: "https://arxiv.org/abs/2202.00129"
+    journal: "https://journals.sagepub.com/doi/full/10.1177/02783649231190947"
+
+- id: tradeoffs_prior_info
+  title: "Fundamental Tradeoffs in Learning with Prior Information"
+  thumbnail: "assets/img/publications/tradeoffs_prior_info.jpg"
+  authors: ["Anirudha Majumdar"]
+  venue: "International Conference on Machine Learning (ICML)"
+  year: 2023
+  links: { arxiv: "https://arxiv.org/abs/2304.13479" }
+
+- id: flowdrone
+  title: "FlowDrone: Wind Estimation and Gust Rejection on UAVs Using Fast-Response Hot-Wire Flow Sensors"
+  thumbnail: "assets/img/publications/flowdrone.png"
+  authors: ["Nathaniel Simon", "Allen Z. Ren", "Alexander Pique", "David Snyder", "Daphne Barretto", "Marcus Hultmark", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2023
+  links: { arxiv: "https://arxiv.org/abs/2210.05857" }
+
+- id: switching_attention
+  title: "Switching Attention in Time-Varying Environments via Bayesian Inference of Abstractions"
+  authors: ["Meghan Booker", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2023
+  links: { arxiv: "https://arxiv.org/abs/2211.05865" }
+
+- id: thesis_pacelli
+  type: thesis
+  title: "Information Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots"
+  thumbnail: "assets/img/publications/thesis_pacelli.png"
+  authors: ["Vincent Pacelli"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2023
+  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2023/06/Pacelli_Thesis_Full.pdf" }
+
+- id: thesis_farid
+  type: thesis
+  title: "Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory"
+  thumbnail: "assets/img/publications/thesis_farid.png"
+  authors: ["Alec Farid"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2023
+  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2023/02/Thesis_Farid.pdf" }
+
+- id: atla
+  title: "Leveraging Language for Accelerated Learning of Tool Manipulation"
+  thumbnail: "assets/img/publications/atla.png"
+  authors: ["Allen Z. Ren", "Bharat Govil", "Tsung-Yen Yang", "Karthik Narasimhan", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2022
+  links:
+    arxiv: "https://arxiv.org/abs/2206.13074"
+    project: "https://irom-lab.github.io/ATLA/"
+
+- id: sim_to_lab_to_real
+  title: "Sim-to-Lab-to-Real: Safe Reinforcement Learning with Shielding and Generalization Guarantees"
+  thumbnail: "assets/img/publications/sim_to_lab_to_real.jpg"
+  authors: ["Kai-Chieh Hsu", "Allen Z. Ren", "Duy P. Nguyen", "Anirudha Majumdar", "Jaime F. Fisac"]
+  venue: "Artificial Intelligence Journal (AIJ)"
+  year: 2022
+  type: journal
+  links:
+    arxiv: "https://arxiv.org/abs/2201.08355"
+    project: "https://sites.google.com/princeton.edu/sim-to-lab-to-real/home"
+
+- id: failure_prediction
+  title: "Failure Prediction with Statistical Guarantees for Vision-Based Robot Control"
+  thumbnail: "assets/img/publications/failure_prediction.jpg"
+  authors: ["Alec Farid", "David Snyder", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2022
+  links: { arxiv: "https://arxiv.org/abs/2202.05894" }
+
+- id: performance_limits_rss
+  title: "Fundamental Performance Limits for Sensor-Based Robot Control and Policy Learning"
+  thumbnail: "assets/img/publications/performance_limits_rss.jpg"
+  authors: ["Anirudha Majumdar", "Vincent Pacelli"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2022
+  links:
+    arxiv: "https://arxiv.org/abs/2202.00129"
+    code: "https://github.com/irom-lab/performance-limits"
+
+- id: complexity_framework
+  title: "Towards a Framework for Comparing the Complexity of Robotics Tasks"
+  thumbnail: "assets/img/publications/complexity_framework.jpg"
+  authors: ["Michelle Ho", "Alec Farid", "Anirudha Majumdar"]
+  venue: "Workshop on the Algorithmic Foundations of Robotics (WAFR)"
+  year: 2022
+  links: { arxiv: "https://arxiv.org/abs/2202.09892" }
+
+- id: stronger_gen_guarantees
+  title: "Stronger Generalization Guarantees for Robot Learning by Combining Generative Models and Real-World Data"
+  thumbnail: "assets/img/publications/stronger_gen_guarantees.jpg"
+  authors: ["Abhinav Agarwal", "Sushant Veer", "Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2022
+  links: { arxiv: "https://arxiv.org/abs/2111.08761" }
+
+- id: bounded_rationality
+  title: "Robust Control under Uncertainty via Bounded Rationality and Differential Privacy"
+  thumbnail: "assets/img/publications/bounded_rationality.png"
+  authors: ["Vincent Pacelli", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2022
+  links: { arxiv: "https://arxiv.org/abs/2109.08262" }
+
+- id: dist_robust_policy
+  title: "Distributionally Robust Policy Learning via Adversarial Environment Generation"
+  thumbnail: "assets/img/publications/dist_robust_policy.jpg"
+  authors: ["Allen Z. Ren", "Anirudha Majumdar"]
+  venue: "Robotics and Automation Letters (RA-L)"
+  year: 2022
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/2107.06353" }
+
+- id: meta_learning_bounds
+  title: "Generalization Bounds for Meta-Learning via PAC-Bayes and Uniform Stability"
+  authors: ["Alec Farid", "Anirudha Majumdar"]
+  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2021
+  links: { arxiv: "https://arxiv.org/abs/2102.06589" }
+
+- id: task_driven_ood
+  title: "Task-Driven Out-of-Distribution Detection with Statistical Guarantees for Robot Learning"
+  thumbnail: "assets/img/publications/task_driven_ood.png"
+  authors: ["Alec Farid", "Sushant Veer", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2021
+  links: { arxiv: "https://arxiv.org/abs/2106.13703" }
+
+- id: regret_min_ilc
+  title: "A Regret Minimization Approach to Iterative Learning Control"
+  thumbnail: "assets/img/publications/regret_min_ilc.png"
+  authors: ["Naman Agarwal", "Elad Hazan", "Anirudha Majumdar", "Karan Singh"]
+  venue: "International Conference on Machine Learning (ICML)"
+  year: 2021
+  links: { arxiv: "https://arxiv.org/abs/2102.13478" }
+
+- id: adversarial_disturbances
+  title: "Generating Adversarial Disturbances for Controller Verification"
+  thumbnail: "assets/img/publications/adversarial_disturbances.jpg"
+  authors: ["Udaya Ghai", "David Snyder", "Anirudha Majumdar", "Elad Hazan"]
+  venue: "Learning for Dynamics and Control (L4DC)"
+  year: 2021
+  notes: "Oral presentation"
+  links: { arxiv: "https://arxiv.org/abs/2012.06695" }
+
+- id: amr_policies
+  title: "Learning to Actively Reduce Memory Requirements for Robot Control Tasks"
+  thumbnail: "assets/img/publications/amr_policies.png"
+  authors: ["Meghan Booker", "Anirudha Majumdar"]
+  venue: "Learning for Dynamics and Control (L4DC)"
+  year: 2021
+  links:
+    arxiv: "https://arxiv.org/abs/2008.07451"
+    code: "https://github.com/irom-lab/AMR-Policies"
+
+- id: invariant_policy_opt
+  title: "Invariant Policy Optimization: Towards Stronger Generalization in Reinforcement Learning"
+  thumbnail: "assets/img/publications/invariant_policy_opt.png"
+  authors: ["Anoopkumar Sonar", "Vincent Pacelli", "Anirudha Majumdar"]
+  venue: "Learning for Dynamics and Control (L4DC)"
+  year: 2021
+  links:
+    arxiv: "https://arxiv.org/abs/2006.01096"
+    code: "https://github.com/irom-lab/Invariant-Policy-Optimization"
+
+- id: gen_guarantees_imitation
+  title: "Generalization Guarantees for Imitation Learning"
+  thumbnail: "assets/img/publications/gen_guarantees_imitation.jpg"
+  authors: ["Allen Z. Ren", "Sushant Veer", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2020
+  links:
+    arxiv: "https://arxiv.org/abs/2008.01913"
+    code: "https://github.com/irom-lab/PAC-Imitation"
+    video: "https://www.youtube.com/watch?v=nabtvOWoIlo"
+
+- id: pac_vision_planning
+  title: "Probably Approximately Correct Vision-Based Planning using Motion Primitives"
+  thumbnail: "assets/img/publications/pac_vision_planning.png"
+  authors: ["Sushant Veer", "Anirudha Majumdar"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2020
+  links:
+    arxiv: "https://arxiv.org/abs/2002.12852"
+    code: "https://github.com/irom-lab/PAC-Vision-Planning"
+    video: "https://youtu.be/-ZfmK68rfn0"
+
+- id: pac_bayes_control_ijrr
+  title: "PAC-Bayes Control: Learning Policies that Provably Generalize to Novel Environments"
+  thumbnail: "assets/img/publications/pac_bayes_control_ijrr.png"
+  authors: ["Anirudha Majumdar", "Alec Farid", "Anoopkumar Sonar"]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2020
+  type: journal
+  links:
+    arxiv: "https://arxiv.org/abs/1806.04225"
+    code: "https://github.com/irom-lab/PAC-Bayes-Control"
+
+- id: lag_net_vip
+  title: "LagNetViP: A Lagrangian Neural Network for Video Prediction"
+  thumbnail: "assets/img/publications/lag_net_vip.png"
+  authors: ["Christine Allen-Blanchette", "Sushant Veer", "Anirudha Majumdar", "Naomi Ehrich Leonard"]
+  venue: "AAAI Symposium on Physics Guided AI"
+  year: 2020
+  links: { arxiv: "https://arxiv.org/pdf/2010.12932.pdf" }
+
+- id: information_bottlenecks_rss
+  title: "Learning Task-Driven Control Policies via Information Bottlenecks"
+  thumbnail: "assets/img/publications/information_bottlenecks_rss.png"
+  authors: ["Vincent Pacelli", "Anirudha Majumdar"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2020
+  links:
+    arxiv: "https://arxiv.org/abs/2002.01428"
+    video: "https://www.youtube.com/watch?v=nzLyRHON24E"
+
+- id: sdp_survey
+  title: "A Survey of Recent Scalability Improvements for Semidefinite Programming with Applications in Machine Learning, Control, and Robotics"
+  thumbnail: "assets/img/publications/sdp_survey.png"
+  authors: ["Anirudha Majumdar", "Georgina Hall", "Amir Ali Ahmadi"]
+  venue: "Annual Review of Control, Robotics, and Autonomous Systems"
+  year: 2020
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/1908.05209" }
+
+- id: information_bottlenecks_icra
+  title: "Task-Driven Estimation and Control via Information Bottlenecks"
+  thumbnail: "assets/img/publications/information_bottlenecks_icra.png"
+  authors: ["Vincent Pacelli", "Anirudha Majumdar"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2019
+  links: { arxiv: "https://arxiv.org/abs/1809.07874" }
+
+- id: dsos_sdsos_siaga
+  title: "DSOS and SDSOS Optimization: More Tractable Alternatives to Sum of Squares and Semidefinite Optimization"
+  thumbnail: "assets/img/publications/dsos_sdsos_siaga.png"
+  authors: ["Amir Ali Ahmadi", "Anirudha Majumdar"]
+  venue: "SIAM Journal on Applied Algebra and Geometry (SIAGA)"
+  year: 2019
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/1706.02586" }
+
+- id: time_consistent_mpc
+  title: "A Framework for Time-Consistent, Risk-Sensitive Model Predictive Control: Theory and Algorithms"
+  thumbnail: "assets/img/publications/time_consistent_mpc.png"
+  authors: ["Yin-Lam Chow", "Sumeet Singh", "Anirudha Majumdar", "Marco Pavone"]
+  venue: "IEEE Transactions on Automatic Control (TAC)"
+  year: 2018
+  type: journal
+  links: { arxiv: "https://arxiv.org/abs/1703.01029" }
+
+- id: risk_sensitive_irl_ijrr
+  title: "Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods"
+  thumbnail: "assets/img/publications/risk_sensitive_irl_ijrr.jpg"
+  authors: ["Sumeet Singh", "Jonathan Lacotte", "Anirudha Majumdar", "Marco Pavone"]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2018
+  type: journal
+  links: { pdf: "https://arxiv.org/pdf/1711.10055.pdf" }
+
+- id: pac_bayes_control_corl
+  title: "PAC-Bayes Control: Synthesizing Controllers that Provably Generalize to Novel Environments"
+  thumbnail: "assets/img/publications/pac_bayes_control_corl.png"
+  authors: ["Anirudha Majumdar", "Maxwell Goldstein"]
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2018
+  links:
+    pdf: "http://proceedings.mlr.press/v87/majumdar18a/majumdar18a.pdf"
+    code: "https://github.com/irom-lab/PAC-Bayes-Control"
+
+- id: risk_axiomatic
+  title: "How Should a Robot Assess Risk? Towards an Axiomatic Theory of Risk in Robotics"
+  thumbnail: "assets/img/publications/risk_axiomatic.png"
+  authors: ["Anirudha Majumdar", "Marco Pavone"]
+  venue: "International Symposium on Robotics Research (ISRR)"
+  year: 2017
+  links: { arxiv: "https://arxiv.org/abs/1710.11040" }
+
+- id: risk_sensitive_irl_rss
+  title: "Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models"
+  thumbnail: "assets/img/publications/risk_sensitive_irl_rss.png"
+  authors: ["Anirudha Majumdar", "Sumeet Singh", "Ajay Mandlekar", "Marco Pavone"]
+  venue: "Robotics: Science and Systems (RSS)"
+  year: 2017
+  links: { pdf: "https://stanfordasl.github.io/wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf" }
+
+- id: funnel_libraries
+  title: "Funnel Libraries for Real-Time Robust Feedback Motion Planning"
+  thumbnail: "assets/img/publications/funnel_libraries.png"
+  authors: ["Anirudha Majumdar", "Russ Tedrake"]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2017
+  type: journal
+  awards: ["IJRR Paper of the Year Award (2017)"]
+  links: { pdf: "http://groups.csail.mit.edu/robotics-center/public_papers/Majumdar16.pdf" }
+
+- id: robust_contraction
+  title: "Robust Online Motion Planning via Contraction Theory and Convex Optimization"
+  thumbnail: "assets/img/publications/robust_contraction.png"
+  authors: ["Sumeet Singh", "Anirudha Majumdar", "Jean-Jacques Slotine", "Marco Pavone"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2017
+  links: { pdf: "https://stanfordasl.github.io/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf" }
+
+- id: thesis_majumdar
+  type: thesis
+  title: "Funnel Libraries for Real-Time Robust Feedback Motion Planning"
+  thumbnail: "assets/img/publications/funnel_libraries.png"
+  authors: ["Anirudha Majumdar"]
+  venue: "Ph.D. Thesis, Massachusetts Institute of Technology"
+  year: 2016
+  links: { pdf: "http://groups.csail.mit.edu/robotics-center/public_papers/Majumdar16a.pdf" }
+
+- id: grasp_synthesis
+  title: "Synthesis and Optimization of Force Closure Grasps via Sequential Semidefinite Programming"
+  thumbnail: "assets/img/publications/grasp_synthesis.png"
+  authors: ["Hongkai Dai", "Anirudha Majumdar", "Russ Tedrake"]
+  venue: "International Symposium on Robotics Research (ISRR)"
+  year: 2015
+  links: { pdf: "http://groups.csail.mit.edu/robotics-center/public_papers/Dai15.pdf" }
+
+- id: occupation_measures_ijrr
+  title: "Convex Optimization of Nonlinear Feedback Controllers via Occupation Measures"
+  thumbnail: "assets/img/publications/occupation_measures_ijrr.png"
+  authors: ["Anirudha Majumdar", "Ram Vasudevan", "Mark M. Tobenkin", "Russ Tedrake"]
+  venue: "International Journal of Robotics Research (IJRR)"
+  year: 2014
+  type: journal
+  links: { pdf: "http://groups.csail.mit.edu/robotics-center/public_papers/Majumdar14.pdf" }
+
+- id: control_sos
+  title: "Control Design Along Trajectories with Sums of Squares Programming"
+  thumbnail: "assets/img/publications/control_sos.png"
+  authors: ["Anirudha Majumdar", "Amir Ali Ahmadi", "Russ Tedrake"]
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2013
+  awards: ["Best Conference Paper Award"]
+  links: { pdf: "http://groups.csail.mit.edu/robotics-center/public_papers/Majumdar13.pdf" }

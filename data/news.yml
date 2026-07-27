@@ -1,0 +1,472 @@
+# ─────────────────────────────────────────────────────────────
+# Homepage news. Most recent first. Markdown-style links allowed
+# in `body` via [text](url) — they're auto-converted to <a>.
+# Lines starting with "- " render as bullet lists.
+# Text mirrors irom-lab.princeton.edu/ as of 2026-05.
+# ─────────────────────────────────────────────────────────────
+
+- date: "2026-04"
+  body: |
+    🎓 Congratulations to **Dr. Justin Lidard** for his successful PhD thesis defense:
+    *Robot Learning For and From Humans: Scalable Algorithms and Safety Assurances*!
+    [Click here for a photo of the celebration!](https://irom-lab.princeton.edu/wp-content/uploads/2026/05/justin_fpo.png)
+
+- date: "2026-03"
+  body: |
+    **New preprints available:**
+    - L. Zha, A. Hancock, et. al., *[LAP: Language-Action Pre-training Enables Zero-Shot Cross-Embodiment Transfer](https://arxiv.org/abs/2602.10556)*
+    - T. Yin, Z. Mei, et. al., *[PlayWorld: Learning Robot World Models from Autonomous Play](https://arxiv.org/abs/2603.09030)*
+    - D. Snyder, A. Badithela, et. al., *[Beyond Binary Success: Sample-Efficient and Statistically Rigorous Robot Policy Comparison](https://arxiv.org/abs/2603.13616)*
+
+- date: "2026-01"
+  body: |
+    New survey paper on [video generation models](https://arxiv.org/abs/2601.07823)!
+
+- date: "2025-12"
+  body: |
+    **New preprints available!**
+    - Z. Mei\*, T. Yin, M. Baker, O. Shorinwa\*, and A. Majumdar, *[World Models That Know When They Don't Know: Controllable Video Generation with Calibrated Uncertainty](https://arxiv.org/abs/2512.05927)*
+    - Gemini Robotics Team, *[Evaluating Gemini Robotics Policies in a Veo World Simulator](https://arxiv.org/abs/2512.10675)*
+
+- date: "2025-10"
+  body: |
+    🏆 Our work on *[Reliable and Scalable Robot Policy Evaluation with Imperfect Simulators](https://arxiv.org/pdf/2510.04354)* won the **Best Paper Award** at the Eval&Deploy Workshop at CoRL!
+
+- date: "2025-10"
+  body: |
+    **New preprints available:**
+    - Z. Mei\*, O. Shorinwa\*, and A. Majumdar, *[How Confident are Video Models? Empowering Video Models to Express their Uncertainty](https://www.arxiv.org/abs/2510.02571)*
+    - Z. Mei\*, O. Shorinwa\*, and A. Majumdar, *[Geometry Meets Vision: Revisiting Pretrained Semantics in Distilled Fields](https://arxiv.org/abs/2510.03104)*
+    - A. Badithela, D. Snyder, L. Zha, et. al., *[Reliable and Scalable Robot Policy Evaluation with Imperfect Simulators](https://arxiv.org/pdf/2510.04354)*
+    - A. Jindal, D. Kalashnikov, et. al., *[Can AI Perceive Physical Danger and Intervene?](https://arxiv.org/abs/2509.21651)*
+    - A. Hancock, X. Wu, et. al., *[Actions as Language: Fine-Tuning VLMs into VLAs Without Catastrophic Forgetting](https://arxiv.org/abs/2509.22195)*
+
+- date: "2025-09"
+  body: |
+    New tech report from the Gemini Robotics Team: *[Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](https://arxiv.org/abs/2510.03342)*.
+
+- date: "2025-09"
+  body: |
+    New preprint from A. Majumdar: *[Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors](https://arxiv.org/pdf/2509.12081)*!
+
+- date: "2025-08"
+  body: |
+    Four papers accepted to **CoRL**!
+    - T. Yin, Z. Mei, et. al., *[WoMAP: World Models For Embodied Open-Vocabulary Object Localization](https://arxiv.org/pdf/2506.01600)*
+    - P. Sermanet, A. Majumdar, et. al., *[Generating Robot Constitutions & Benchmarks for Semantic Safety](https://arxiv.org/pdf/2503.08663)*
+    - A. Majumdar, M. Sharma, et. al., *[Predictive Red Teaming: Breaking Policies Without Breaking Robots](https://arxiv.org/pdf/2502.06575)*
+    - O. Shorinwa, J. Sun, et. al., *[SIREN: Semantic, Initialization-Free Registration of Multi-Robot Gaussian Splatting Maps](https://arxiv.org/pdf/2502.06519)*
+
+- date: "2025-07"
+  body: |
+    🎓 Congratulations to **Dr. David Snyder** for his successful PhD thesis defense:
+    *Nonasymptotic Methods for Guaranteed Robotic Policy Synthesis and Evaluation*!
+    [Click here to see a photo of the farewell brunch.](https://irom-lab.princeton.edu/wp-content/uploads/2025/08/IMG_4782-min-scaled.jpg)
+
+- date: "2025-05"
+  body: |
+    🎓 Congratulations to **Dr. Nathaniel Simon** for his successful PhD thesis defense:
+    *[Learned Perception Modules for Autonomous Aerial Vehicle Navigation and Control](https://irom-lab.princeton.edu/wp-content/uploads/2025/07/Simon_princeton_0181D_15442-1.pdf)*!
+    See the [photo of the celebration](https://irom-lab.princeton.edu/wp-content/uploads/2025/06/NateFPO.jpg) and [farewell brunch](https://irom-lab.princeton.edu/wp-content/uploads/2025/06/IMG_4483-min.png)!
+
+- date: "2025-02"
+  body: |
+    [Photo from our farewell brunch for Allen.](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/IMG_4263-1.png) We're wishing you the best of luck on your next adventure!
+
+- date: "2025-02"
+  body: |
+    🎓 Congratulations to **Dr. Zhiyi "Allen" Ren** for his successful PhD thesis defense:
+    *[Towards Robust and Provably Generalizable Robot Learning](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Ren_princeton_thesis.pdf)*!
+    See the [video](https://youtu.be/OmzgBnjpaqc) and a [photo of the celebration](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/IMG_5102-scaled.jpg)!
+
+- date: "2025-02"
+  body: |
+    New preprints:
+    - O. Shorinwa, J. Sun, et. al., *[SIREN: Semantic, Initialization-Free Registration of Multi-Robot Gaussian Splatting Maps](https://arxiv.org/pdf/2502.06519)*
+    - A. Majumdar, M. Sharma, et. al., *[Predictive Red Teaming: Breaking Policies Without Breaking Robots](https://arxiv.org/pdf/2502.06575)*
+
+- date: "2025-01"
+  body: |
+    Our work on [Bring Your Own VLA (BYOVLA)](https://arxiv.org/abs/2410.01971) has been featured in the popular press!
+    - *Communications of the ACM*: [Can LLMs Make Robots Smarter?](https://dl.acm.org/doi/10.1145/3701227)
+    - *Communications of the ACM*: [Images Give Robots a Sharper Focus](https://cacm.acm.org/news/images-give-robots-a-sharper-focus/)
+
+- date: "2024-12"
+  body: |
+    New preprints:
+    - O. Shorinwa, Z. Mei, et. al., *[A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions](https://arxiv.org/abs/2412.05563)*
+    - A. Z. Ren, B. Ichter, and A. Majumdar, *[Thinking Forward and Backward: Effective Backward Planning with Large Language Models](https://arxiv.org/abs/2411.01790)*
+
+- date: "2024-11"
+  body: |
+    Presented our lab's recent work at the [CMU RI Seminar](https://www.youtube.com/watch?v=g2DWXl9BhGo&ab_channel=CMURoboticsInstitute) and the [UT Austin Center for Autonomy Seminar](https://oden.utexas.edu/news-and-events/past-events/2012---Anirudha%20Majumdar)! *[Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception](https://arxiv.org/abs/2403.08185)* published at **CoRL 2024**!
+
+- date: "2024-09"
+  body: |
+    New preprints:
+    - A. Z. Ren, J. Lidard, et. al., *[Diffusion Policy Policy Optimization](https://arxiv.org/abs/2409.00588)*
+    - A. J. Hancock, A. Z. Ren, et. al., *[Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust](https://arxiv.org/abs/2410.01971)*
+    - Y. I. Liu, W. Nguyen, et. al., *[Flash STU: Fast Spectral Transform Units](https://arxiv.org/abs/2409.10489)*
+    - A. Farid, S. Veer, et. al., *[Task-Driven Detection of Distribution Shifts with Statistical Guarantees for Robot Learning](https://arxiv.org/abs/2106.13703)*
+
+- date: "2024-05"
+  body: |
+    🎓 Congratulations to **Dr. Meghan Booker** for her successful PhD thesis defense:
+    *[Task-Driven Perception and Control for Robust and Efficient Autonomy](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Booker_princeton_0181D_14988.pdf)*!
+
+- date: "2024-04"
+  body: |
+    New preprints:
+    - A. Z. Ren, J. Clark, A. Dixit, et. al., *[Explore until Confident: Efficient Exploration for Embodied Question Answering](https://arxiv.org/abs/2403.15941)*
+    - A. Dixit, Z. Mei, M. Booker, et. al., *[Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception](https://arxiv.org/abs/2403.08185)*
+    - J. Lidard, H. Pham, A. Bachman, et. al., *[Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction](https://arxiv.org/abs/2403.15959)*
+
+- date: "2024-04"
+  body: |
+    Our work has been featured in the popular press! *Science News Explores*: [How to design artificial intelligence that acts nice — and only nice](https://www.snexplores.org/article/artificial-intelligence-ai-safety-good-behavior).
+
+- date: "2024-04"
+  body: |
+    🏆 Congratulations to **Allen Ren** for winning the [Jacobus Fellowship](https://gradschool.princeton.edu/financial-support/fellowships/princeton-fellowships/honorific-fellowship-porter-ogden-jacobus)!
+
+- date: "2024-02"
+  body: |
+    Our work has been featured in the popular press! *Scientific American*: [Scientists Are Putting ChatGPT Brains Inside Robot Bodies. What Could Possibly Go Wrong?](https://www.scientificamerican.com/article/scientists-are-putting-chatgpt-brains-inside-robot-bodies-what-could-possibly-go-wrong/)
+
+- date: "2023-12"
+  body: |
+    Our work on [Robots That Ask For Help](https://arxiv.org/abs/2307.01928) has been featured in the popular press!
+    - *MIT Technology Review* (paywall): [These Robots Know When to Ask for Help](https://www.technologyreview.com/2023/12/08/1084672/these-robots-know-when-to-ask-for-help/)
+    - *Princeton Engineering*: [How do you make a robot smarter? Program it to know what it doesn't know.](https://engineering.princeton.edu/news/2023/11/28/how-do-you-make-robot-smarter-program-it-know-what-it-doesnt-know)
+
+- date: "2023-12"
+  body: |
+    New preprints:
+    - N. Simon and A. Majumdar, *[MonoNav: MAV Navigation via Monocular Depth Estimation and Reconstruction](https://arxiv.org/abs/2311.14100)* (accepted to ISER)
+    - R. Firoozi, J. Tucker, S. Tian, A. Majumdar, et. al., *[Foundation Models in Robotics: Applications, Challenges, and the Future](https://arxiv.org/abs/2312.07843)*
+
+- date: "2023-12"
+  body: |
+    *[PAC-Bayes Generalization Certificates for Learned Inductive Conformal Prediction](https://arxiv.org/abs/2312.04658)* published at **Advances in Neural Information Processing Systems (NeurIPS), 2023**.
+
+- date: "2023-11"
+  body: |
+    🏆 **[Best Student Paper Award at CoRL 2023](https://www.corl2023.org/awards)** for our paper *[Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](https://arxiv.org/abs/2307.01928)*!
+
+- date: "2023-11"
+  body: |
+    🏆 Congratulations to **Allen Ren** for winning the [SEAS Award for Excellence](https://engineering.princeton.edu/news/2023/11/09/award-excellence-honors-graduate-student-achievement-4)!
+
+- date: "2023-09"
+  body: |
+    New preprints:
+    - J. Gao, B. Sarkar, F. Xia, T. Xiao, J. Wu, B. Ichter, A. Majumdar, and D. Sadigh, *[Physically Grounded Vision-Language Models](https://iliad.stanford.edu/pg-vlm/)*
+    - E. Lepowsky\*, D. Snyder\*, A. Glaser, and A. Majumdar, *[Privacy-Preserving Absence Confirmation in Sensitive Nuclear Facilities](https://github.com/elepowsky/verification/tree/main)* (\* equal contribution)
+
+- date: "2023-08"
+  body: |
+    Two papers accepted to the **International Journal of Robotics Research (IJRR)**!
+    - A. Majumdar, Z. Mei, and V. Pacelli, *[Fundamental Limits for Sensor-Based Robot Control](https://journals.sagepub.com/doi/full/10.1177/02783649231190947)*
+    - S. Singh, B. Landry, A. Majumdar, J.-J. Slotine, and M. Pavone, *[Robust Feedback Motion Planning via Contraction Theory](https://journals.sagepub.com/doi/full/10.1177/02783649231186165)*
+
+- date: "2023-08"
+  body: |
+    Three papers accepted to **CoRL**!
+    - A. Z. Ren, H. Dai, B. Burchfiel, and A. Majumdar, *[AdaptSim: Task-Driven Simulation Adaptation for Sim-to-Real Transfer](https://arxiv.org/abs/2302.04903)* ([video](https://www.youtube.com/watch?v=p2msMCOFDDg))
+    - A. Z. Ren, et. al., *[Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](https://arxiv.org/abs/2307.01928)* ([video](https://www.youtube.com/watch?v=xCXx09gfhx4), [webpage](http://robot-help.github.io/))
+    - D. Snyder, M. Booker, N. Simon, W. Xia, D. Suo, E. Hazan, and A. Majumdar, *[Online Learning for Obstacle Avoidance](https://arxiv.org/abs/2306.08776)*
+
+- date: "2023-07"
+  body: |
+    New preprints (in collaboration with [Google DeepMind](https://www.deepmind.com/)):
+    - A. Z. Ren, et. al., *[Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](https://arxiv.org/abs/2307.01928)* ([video](https://www.youtube.com/watch?v=xCXx09gfhx4), [webpage](http://robot-help.github.io/))
+    - D. Snyder, M. Booker, N. Simon, W. Xia, D. Suo, E. Hazan, and A. Majumdar, *[Online Learning for Obstacle Avoidance](https://arxiv.org/abs/2306.08776)*
+
+- date: "2023-07"
+  body: |
+    🏆 Congrats to **Zhiting Mei** for winning the Phillips Fellowship!
+
+- date: "2023-07"
+  body: |
+    🏆 Congrats to **Nate Simon, Sasha Bodrova, and An-Ya Olson** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](http://irom-lab.princeton.edu/intro-to-robotics)!
+
+- date: "2023-05"
+  body: |
+    🎓 Congratulations to **Dr. Vincent Pacelli** for his successful PhD thesis defense: *[Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots](https://irom-lab.princeton.edu/wp-content/uploads/2023/06/Pacelli_Thesis_Full.pdf)*!
+
+- date: "2023-05"
+  body: |
+    🏆 [Outstanding Presentation Award at Princeton Research Day](https://researchday.princeton.edu/present/awards/2023-award-winners)! See the [video](https://mediacentral.princeton.edu/media/Improving+Drone+Performance+in+Wind+with+Novel%2C+Fast%2C+Sensors%2C+Nate+Simon%2C+GS++%282272842%29/1_vqpwimiz).
+
+- date: "2023-04"
+  body: |
+    Paper accepted to **ICML**! *[Fundamental Tradeoffs in Learning with Prior Information](https://arxiv.org/abs/2304.13479)*.
+
+- date: "2023-03"
+  body: |
+    Two papers accepted to **ICRA**!
+    - M. Booker and A. Majumdar, *[Switching Attention in Time-Varying Environments via Bayesian Inference of Abstractions](https://arxiv.org/abs/2211.05865)*
+    - N. Simon, A. Z. Ren, A. Piqué, D. Snyder, D. Barretto, M. Hultmark, and A. Majumdar, *[FlowDrone: Wind Estimation and Gust Rejection on UAVs Using Fast-Response Hot-Wire Flow Sensors](https://arxiv.org/abs/2210.05857)*
+
+- date: "2023-02"
+  body: |
+    🏆 Prof. Anirudha Majumdar awarded a [Sloan Fellowship](https://sloan.org/fellowships)!
+
+- date: "2023-02"
+  body: |
+    Collaboration work with [Karthik Narasimhan's group](https://www.cs.princeton.edu/~karthikn/) on [leveraging language information for tool manipulation](https://arxiv.org/abs/2206.13074) is featured in the article [Machines Learn Better if We Teach Them the Basics](https://www.quantamagazine.org/machines-learn-better-if-we-teach-them-the-basics-20230201/) in *Quanta Magazine*!
+
+- date: "2023-02"
+  body: |
+    New preprints from our group:
+    - A. Z. Ren, H. Dai, B. Burchfiel, and A. Majumdar, *[AdaptSim: Task-Driven Simulation Adaptation for Sim-to-Real Transfer](https://arxiv.org/abs/2302.04903)* ([video](https://www.youtube.com/watch?v=p2msMCOFDDg)) — in collaboration with [Toyota Research Institute (TRI)](https://www.tri.global/our-work/robotics)
+    - A. Majumdar, Z. Mei, and V. Pacelli, *[Fundamental Limits for Sensor-Based Robot Control](https://arxiv.org/abs/2202.00129)*
+
+- date: "2023-01"
+  body: |
+    🎓 Congratulations to **Dr. Alec Farid** for his successful PhD thesis defense: *[Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory](https://irom-lab.princeton.edu/wp-content/uploads/2023/02/Thesis_Farid.pdf)*! See the [video](https://youtu.be/1UZWZQkQ2e4).
+
+- date: "2022-12"
+  body: |
+    We took delivery of our [Windshape](https://windshape.com/technology-2/)! This dynamic fan array uses 324 individually controllable fans to enable precise construction of spatially-varying gusts reaching upwards of 16 m/s. We will be using it for research on UAV control in extreme wind conditions.
+
+- date: "2022-11"
+  body: |
+    New preprint: M. Booker and A. Majumdar, *[Switching Attention in Time-Varying Environments via Bayesian Inference of Abstractions](https://arxiv.org/abs/2211.05865)*. See the [video](https://www.youtube.com/watch?v=lcL1Pcf3qmk).
+
+- date: "2022-11"
+  body: |
+    Paper accepted to **Measurement Science and Technology (MST)**! N. Simon\*, A. Piqué\*, D. Snyder, K. Ikuma, A. Majumdar, and M. Hultmark, *[Fast-Response Hot-wire Flow Sensors for Wind and Gust Estimation on UAVs](https://iopscience.iop.org/article/10.1088/1361-6501/ac9f5c)* (\*Equal contribution).
+
+- date: "2022-10"
+  body: |
+    K.-C. Hsu\*, A. Z. Ren\*, D. P. Nguyen, A. Majumdar\*\*, and J. F. Fisac\*\*, *[Sim-to-Lab-to-Real: Safe Reinforcement Learning with Shielding and Generalization Guarantees](https://sites.google.com/princeton.edu/sim-to-lab-to-real/home)* (\*Equal contributions, \*\*Equal advising). Paper published at **Artificial Intelligence Journal (AIJ)**!
+
+- date: "2022-10"
+  body: |
+    New pre-print: N. Simon, A. Z. Ren, A. Piqué, D. Snyder, D. Barretto, M. Hultmark, and A. Majumdar, *[FlowDrone: Wind Estimation and Gust Rejection on UAVs Using Fast-Response Hot-Wire Flow Sensors](https://arxiv.org/abs/2210.05857)*. See the [video](https://www.youtube.com/watch?v=KWqkH9Z-338).
+
+- date: "2022-09"
+  body: |
+    🏆 Congrats to **Alec Farid** for receiving the [School of Engineering and Applied Science (SEAS) Award for Excellence](https://engineering.princeton.edu/news/2022/10/03/award-excellence-honors-graduate-student-achievement-3)!
+
+- date: "2022-09"
+  body: |
+    🏆 [ONR Young Investigator Program award](https://www.navy.mil/Press-Office/News-Stories/Article/3168958/best-and-brightest-onrs-2023-young-investigators/).
+
+- date: "2022-09"
+  body: |
+    New pre-print: N. Simon, A. Piqué, D. Snyder, K. Ikuma, A. Majumdar, and M. Hultmark, *[Fast-Response Hot-wire Flow Sensors for Wind and Gust Estimation on UAVs](https://arxiv.org/abs/2209.06643)*.
+
+- date: "2022-09"
+  body: |
+    Paper accepted to **CoRL**! A. Z. Ren, B. Govil, T.-Y. Yang, K. Narasimhan\*, and A. Majumdar\*, *[Leveraging Language for Accelerated Learning of Tool Manipulation](https://arxiv.org/abs/2206.13074)*.
+
+- date: "2022-06"
+  body: |
+    🏆 Congrats to **Allen Ren** for receiving the Harari Fellowship from the MAE department!
+
+- date: "2022-06"
+  body: |
+    🏆 Congrats to **David Snyder and Allen Ren** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](http://irom-lab.princeton.edu/intro-to-robotics)!
+
+- date: "2022-06"
+  body: |
+    New pre-print: A. Z. Ren, B. Govil, T.-Y. Yang, K. Narasimhan\*, and A. Majumdar\*, *[Leveraging Language for Accelerated Learning of Tool Manipulation](https://arxiv.org/abs/2206.13074)*.
+
+- date: "2022-04"
+  body: |
+    Two papers accepted to **RSS**!
+    - A. Farid\*, D. Snyder\*, A. Z. Ren, and A. Majumdar, *[Failure Prediction with Statistical Guarantees for Vision-Based Robot Control](https://arxiv.org/abs/2202.05894)*
+    - A. Majumdar and V. Pacelli, *[Fundamental Performance Limits for Sensor-Based Robot Control and Policy Learning](https://arxiv.org/abs/2202.00129)*
+
+- date: "2022-04"
+  body: |
+    Paper accepted to **WAFR**! M. Ho\*, A. Farid\*, and A. Majumdar, *[Comparing the Complexity of Robotics Tasks](https://arxiv.org/abs/2202.09892)*.
+
+- date: "2022-02"
+  body: |
+    Our work on using airflow sensors for improving drone control in collaboration with Marcus Hultmark's group was highlighted by [Princeton Engineering news](https://engineering.princeton.edu/news/2022/01/25/small-efficient-sensors-help-drones-fly-high-winds).
+
+- date: "2022-02"
+  body: |
+    New preprints from our group:
+    - M. Ho\*, A. Farid\*, and A. Majumdar, *[Comparing the Complexity of Robotics Tasks](https://arxiv.org/abs/2202.09892)*
+    - A. Farid\*, D. Snyder\*, A. Z. Ren, and A. Majumdar, *[Failure Prediction with Statistical Guarantees for Vision-Based Robot Control](https://arxiv.org/abs/2202.05894)*
+    - A. Majumdar and V. Pacelli, *[Fundamental Performance Limits for Sensor-Based Robot Control and Policy Learning](https://arxiv.org/abs/2202.00129)*
+
+- date: "2022-01"
+  body: |
+    We have **3 papers** from our group accepted to **ICRA 2022**!
+
+- date: "2022-01"
+  body: |
+    New preprint in collaboration with Jaime Fisac's group: K.-C. Hsu\*, A. Z. Ren\*, D. P. Nguyen, A. Majumdar\*\*, and J. F. Fisac\*\*, *[Sim-to-Lab-to-Real: Safe Reinforcement Learning with Shielding and Generalization Guarantees](https://arxiv.org/abs/2201.08355)* (\*Equal contributions, \*\*Equal advising).
+
+- date: "2022-01"
+  body: |
+    Paper accepted to the **Robotics and Automation Letters (RA-L)** journal: A. Z. Ren and A. Majumdar, *[Distributionally Robust Policy Learning via Adversarial Environment Generation](https://arxiv.org/abs/2107.06353)*.
+
+- date: "2021-11"
+  body: |
+    Ani is presenting the group's research at **UC Berkeley, UCSD, and Waymo**. A [video of the UCSD seminar](https://youtu.be/KBxkcfSZclI) is available online.
+
+- date: "2021-11"
+  body: |
+    Two new preprints from the group:
+    - A. Agarwal, S. Veer, A. Z. Ren, and A. Majumdar, *[Stronger Generalization Guarantees for Robot Learning by Combining Generative Models and Real-World Data](https://arxiv.org/abs/2111.08761)*
+    - A. E. Gurgen, A. Majumdar, and S. Veer, *[Learning Provably Robust Motion Planners using Funnel Libraries](https://arxiv.org/abs/2111.08733)*
+
+- date: "2021-10"
+  body: |
+    Paper accepted to **NeurIPS**: A. Farid and A. Majumdar, *[Generalization Bounds for Meta-Learning via PAC-Bayes and Uniform Stability](https://arxiv.org/abs/2102.06589)*.
+
+- date: "2021-09"
+  body: |
+    New preprint from our group: V. Pacelli and A. Majumdar, *[Robust Control under Uncertainty via Bounded Rationality and Differential Privacy](https://arxiv.org/abs/2109.08262)*.
+
+- date: "2021-09"
+  body: |
+    Paper accepted to the **Conference on Robot Learning (CoRL)**: A. Farid\*, S. Veer\*, and A. Majumdar, *[Task-Driven Out-of-Distribution Detection with Statistical Guarantees for Robot Learning](https://arxiv.org/abs/2106.13703)*.
+
+- date: "2021-08"
+  body: |
+    🏆 **Alec Farid** received the Dale Grieb Safety Award from the School of Engineering and Applied Science at Princeton. Congrats Alec!
+
+- date: "2021-06"
+  body: |
+    New preprint from our group: A. Z. Ren and A. Majumdar, *[Distributionally Robust Policy Learning via Adversarial Environment Generation](https://arxiv.org/abs/2107.06353)*.
+
+- date: "2021-06"
+  body: |
+    🏆 **Meghan Booker and Alec Farid** received the Crocco Award for Teaching Excellence for the course MAE 345/549: Introduction to Robotics (Fall '20). **Alexandra (Sasha) Bodrova and Nate Simon** received the Guggenheim Second Year Fellowships. Congrats Meghan, Alec, Sasha, and Nate!
+
+- date: "2021-05"
+  body: |
+    Paper accepted to **ICML**: N. Agarwal, E. Hazan, A. Majumdar, and K. Singh, *[A Regret Minimization Approach to Iterative Learning Control](https://arxiv.org/abs/2102.13478)*.
+
+- date: "2021-04"
+  body: |
+    Our group's research is featured in the [A.I. Nation Podcast](https://whyy.org/episodes/ep-2-a-i-in-the-drivers-seat/) from [WHYY](https://whyy.org/) (NPR/PBS affiliate) and Princeton. The new podcast series was [highlighted on Princeton's homepage](https://www.princeton.edu/news/2021/04/01/hello-world-princeton-and-whyy-launch-new-podcast-ai-nation).
+
+- date: "2021-03"
+  body: |
+    We have three papers accepted to **L4DC**:
+    - U. Ghai\*, D. Snyder\*, A. Majumdar, and E. Hazan, *[Generating Adversarial Disturbances for Controller Verification](https://arxiv.org/abs/2012.06695)* **(Selected for oral presentation)**
+    - M. Booker and A. Majumdar, *[Learning to Actively Reduce Memory Requirements for Robot Control Tasks](https://arxiv.org/abs/2008.07451)*
+    - A. Sonar, V. Pacelli, and A. Majumdar, *[Invariant Policy Optimization: Towards Stronger Generalization in Reinforcement Learning](https://arxiv.org/abs/2006.01096)*
+
+- date: "2021-02"
+  body: |
+    🏆 [NSF CAREER award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2044149&HistoricalAwards=false).
+
+- date: "2021-02"
+  body: |
+    New preprints from our group. Feedback is welcome!
+    - U. Ghai\*, D. Snyder\*, A. Majumdar, and E. Hazan, *[Generating Adversarial Disturbances for Controller Verification](https://arxiv.org/abs/2012.06695)*
+    - A. Farid and A. Majumdar, *[PAC-BUS: Meta-learning Bounds via PAC-Bayes and Uniform Stability](https://arxiv.org/abs/2102.06589)*
+
+- date: "2021-02"
+  body: |
+    🏆 We are delighted to have received an [Innovation Fund grant from Princeton SEAS](https://engineering-resources.princeton.edu/funding/) for a collaborative project with [Marcus Hultmark's group](http://fluids.princeton.edu/index.shtml).
+
+- date: "2021-01"
+  body: |
+    🏆 [Young Faculty Researcher Award](https://cefr.princeton.edu/news/princeton-selected-toyota-research-institutes-academic-collaboration-program) from the Toyota Research Institute.
+
+- date: "2020-11"
+  body: |
+    Our work on safety and generalization guarantees for learning-based control of robots was highlighted by Princeton Engineering in a news article: [Machine Learning Guarantees Robots' Performance in Unknown Territory](https://engineering.princeton.edu/news/2020/11/17/machine-learning-guarantees-robots-performance-unknown-territory).
+
+- date: "2020-10"
+  body: |
+    Two papers accepted to the **2020 Conference on Robot Learning (CoRL)**:
+    - *[Generalization Guarantees for Multi-Modal Imitation Learning](https://arxiv.org/abs/2008.01913)* — work led by Allen Ren and Sushant Veer
+    - *[Probably Approximately Correct Vision-Based Planning using Motion Primitives](https://arxiv.org/abs/2002.12852)* — work led by Sushant Veer
+
+- date: "2020-08"
+  body: |
+    Our paper *[PAC-Bayes Control: Learning Policies that Provably Generalize to Novel Environments](https://arxiv.org/abs/1806.04225)* was accepted to the **International Journal of Robotics Research (IJRR)**!
+
+- date: "2020-08"
+  body: |
+    New preprints from our group. Feedback is welcome!
+    - *[Generalization Guarantees for Multi-Modal Imitation Learning](https://arxiv.org/abs/2008.01913)* — work led by Allen Ren and Sushant Veer
+    - *[Invariant Policy Optimization: Towards Stronger Generalization in Reinforcement Learning](https://arxiv.org/abs/2006.01096)* — work led by Anoop Sonar and Vince Pacelli
+    - *[Learning to Actively Reduce Memory Requirements for Robot Control Tasks](https://arxiv.org/abs/2008.07451)* — work led by Meghan Booker
+
+- date: "2020-07"
+  body: |
+    Sushant Veer has a new preprint *[CoNES: Convex Natural Evolutionary Strategies](https://arxiv.org/abs/2007.08601)* on high-dimensional blackbox optimization. Feedback is welcome.
+
+- date: "2020-07"
+  body: |
+    🏆 **Vince Pacelli** was awarded the Crocco Award for Teaching Excellence. This prize was awarded by the MAE Department in recognition of outstanding performance as an Assistant in Instruction for *MAE 345: Introduction to Robotics*, in Fall 2019. Congrats Vince!
+
+- date: "2020-05"
+  body: |
+    Our paper *Learning Task-Driven Control Policies via Information Bottlenecks* was accepted to **RSS 2020**! Vince's 5-min talk on the paper is available on [YouTube](https://youtu.be/nzLyRHON24E).
+
+- date: "2020-05"
+  body: |
+    🏆 [Alfred Rheinstein Faculty Award](https://mae.princeton.edu/about-mae/news/congratulations-prof-anirudha-majumdar-receiving-alfred-rheinstein-faculty-award).
+
+- date: "2020-04"
+  body: |
+    🏆 We are excited to have received a second [Amazon Research Award](https://ara.amazon-ml.com/).
+
+- date: "2020-02"
+  body: |
+    Sushant Veer has a new preprint *[Probably Approximately Correct Vision-Based Planning using Motion Primitives](https://arxiv.org/abs/2002.12852)*. Feedback is welcome.
+
+- date: "2020-02"
+  body: |
+    🏆 We are excited to have received another [Google Faculty Research Award](https://ai.googleblog.com/2020/02/announcing-2019-google-faculty-research.html).
+
+- date: "2020-02"
+  body: |
+    Vince Pacelli has a new preprint *[Learning Task-Driven Control Policies via Information Bottlenecks](https://arxiv.org/abs/2002.01428)*. Feedback is welcome.
+
+- date: "2020-02"
+  body: |
+    Ani's talk on *Safety and Generalization Guarantees for Learning-Based Control of Robots* at the Penn GRASP seminar is available on [YouTube](https://youtu.be/2Tw0V9VIeBY?t=91).
+
+- date: "2019-10"
+  body: |
+    Ani is presenting the lab's recent work this Fall at the **MIT Robotics Seminar, Penn GRASP Seminar, Johns Hopkins Applied Physics Lab, Yale Mechanical Engineering and Materials Science seminar**, and the **Amazon Research Awards symposium**.
+
+- date: "2019-09"
+  body: |
+    New paper with Sumeet Singh, Benoit Landry, Jean-Jacques Slotine, and Marco Pavone: *[Robust Feedback Motion Planning via Contraction Theory](http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf)*.
+
+- date: "2019-09"
+  body: |
+    New [survey paper](https://arxiv.org/abs/1908.05209) with Georgina Hall and Amir Ali Ahmadi on scalable approaches to semidefinite programming.
+
+- date: "2019-07"
+  body: |
+    Extended version of paper on [PAC-Bayes control](https://arxiv.org/abs/1806.04225) available on ArXiv.
+
+- date: "2019-01"
+  body: |
+    Paper accepted to **ICRA 2019**: *[Task-Driven Estimation and Control via Information Bottlenecks](https://arxiv.org/abs/1809.07874)*.
+
+- date: "2019-01"
+  body: |
+    🏆 [Amazon Research Award](https://ara.amazon-ml.com/recipients/#2018).
+
+- date: "2018-09"
+  body: |
+    Paper accepted to **CoRL 2018**: *[PAC-Bayes Control: Synthesizing Controllers that Provably Generalize to Novel Environments](https://arxiv.org/abs/1806.04225)*.
+
+- date: "2018-06"
+  body: |
+    🏆 [Paper of the Year Award](https://connection.sagepub.com/blog/sage-connection/2018/07/06/introducing-the-international-journal-of-robotics-paper-of-the-year-award/) from the *International Journal of Robotics Research (IJRR)* for the [funnel library paper](http://journals.sagepub.com/doi/full/10.1177/0278364917712421#) with Russ Tedrake.
+
+- date: "2018-04"
+  body: |
+    🏆 [NSF CRII Award](https://nsf.gov/awardsearch/showAward?AWD_ID=1755038&HistoricalAwards=false).
+
+- date: "2018-03"
+  body: |
+    🏆 [Google Faculty Research Award](https://research.google/outreach/faculty-research-awards/recipients/?category=2017).

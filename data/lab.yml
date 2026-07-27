@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────────────────────
+# Lab-level metadata. Edit values here; pages pick them up.
+# ─────────────────────────────────────────────────────────────
+name: "Intelligent Robot Motion Lab"
+short_name: "IRoM Lab"
+tagline: "We work on generalist robots that are safe, trustworthy, and capable."
+
+pi:
+  name: "Anirudha Majumdar"
+  title: "Associate Professor"
+  affiliations:
+    - "Mechanical and Aerospace Engineering"
+    - "Associated Faculty, Computer Science"
+  institution: "Princeton University"
+  email: "ani.majumdar [at] princeton.edu"
+  office: "EQuad D202-B"
+  website: "https://irom-lab.princeton.edu/majumdar"
+
+institution:
+  name: "Princeton University"
+  department: "Mechanical and Aerospace Engineering"
+  address: "Engineering Quadrangle, Princeton, NJ 08544"
+
+logo: "assets/img/logos/irom_lab_logo.png"
+hero_image: "assets/img/lab/lab.jpg"
+
+nav:
+  - { label: "Home",         href: "index.html" }
+  - { label: "Research",     href: "research.html" }
+  - { label: "Publications", href: "publications.html" }
+  - { label: "People",       href: "people.html" }
+  - { label: "Software",     href: "software.html" }
+  - { label: "Teaching",     href: "teaching.html" }
+  - { label: "Press",        href: "press.html" }
+  - { label: "Facilities",   href: "facilities.html" }
+  - { label: "Join us",      href: "join.html" }
+
+social:
+  github: "https://github.com/irom-princeton"
+  google_scholar: "https://scholar.google.com/citations?user=ibu3FwsAAAAJ"
+
+footer:
+  copyright_holder: "Intelligent Robot Motion Lab, Princeton University"

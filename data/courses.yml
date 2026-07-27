@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────────────────────
+# Courses taught by the lab.
+# ─────────────────────────────────────────────────────────────
+
+- title: "Introduction to Robotics"
+  numbers: ["MAE 345", "ECE 345", "COS 346", "MAE 549"]
+  semester: "Fall"
+  description: |
+    Undergraduate and graduate introduction to mobile robotics, with a
+    focus on the algorithms that enable robots to perceive and act in the
+    world. Topics include state estimation, motion planning, control, and
+    machine learning for robotics.
+  url: "https://irom-lab.princeton.edu/intro-to-robotics/"
+
+- title: "Introduction to Engineering Dynamics"
+  numbers: ["MAE 206"]
+  semester: "Spring"
+  description: |
+    An introduction to the dynamics of particles and rigid bodies,
+    including kinematics, Newtonian mechanics, energy methods, and an
+    introduction to vibrations.
+
+- title: "Advanced Dynamics"
+  numbers: ["MAE 542"]
+  semester: "Fall (2017, 2018)"
+  description: |
+    Graduate-level treatment of advanced topics in classical mechanics
+    including Lagrangian and Hamiltonian formulations, variational
+    principles, and applications to robotic systems.

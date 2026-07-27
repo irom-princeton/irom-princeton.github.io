@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────
+# Software / code repositories. Most-starred or flagship first.
+# ─────────────────────────────────────────────────────────────
+
+org_url: "https://github.com/irom-princeton"
+
+repos:
+  - name: "dppo"
+    description: "Official implementation of Diffusion Policy Policy Optimization."
+    url: "https://github.com/irom-princeton/dppo"
+    paper: dppo
+    language: "Python"
+
+  - name: "byovla"
+    description: "Bring Your Own Vision-Language-Action model — run-time observation interventions."
+    url: "https://github.com/irom-princeton/byovla"
+    paper: byovla
+    language: "Python"
+
+  - name: "spine"
+    description: "Geometry meets vision — revisiting pretrained semantics in distilled fields."
+    url: "https://github.com/irom-princeton/spine"
+    paper: spine
+    language: "Python"
+
+  - name: "c-cubed"
+    description: "World models that know when they don't know — controllable video generation with calibrated uncertainty."
+    url: "https://github.com/irom-princeton/c-cubed"
+    paper: c_cubed
+    language: "Python"
+
+  - name: "pybullet-panda"
+    description: "Custom Franka Panda environment in PyBullet."
+    url: "https://github.com/irom-princeton/pybullet-panda"
+    language: "Python"
+
+  - name: "open-world"
+    description: "Open-world manipulation experiments."
+    url: "https://github.com/irom-princeton/open-world"
+    language: "Python"
+
+  - name: "vlm2vla"
+    description: "Training and inference code for fine-tuning vision-language models into vision-language-action models."
+    url: "https://github.com/irom-princeton/vlm2vla"
+    paper: actions_as_language
+    language: "Python"
+
+  - name: "factored-scaling-curves"
+    description: "Official implementation of Guiding Data Collection via Factored Scaling Curves."
+    url: "https://github.com/irom-princeton/factored-scaling-curves"
+    paper: factored
+    language: "Python"
+
+  - name: "perception-guarantees"
+    description: "Combining generalization guarantees for perception and planning."
+    url: "https://github.com/irom-princeton/perception-guarantees"
+    paper: perceive_confidence
+    language: "Python"
+
+  - name: "s-qubed"
+    description: "How confident are video models? Empowering video models to express their uncertainty."
+    url: "https://github.com/irom-princeton/s-qubed"
+    paper: s_qubed
+    language: "Python"

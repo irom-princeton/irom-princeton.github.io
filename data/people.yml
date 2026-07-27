@@ -1,0 +1,114 @@
+# ─────────────────────────────────────────────────────────────
+# People. Add a new member by appending an entry to the right list.
+# Fields: name (required), role, photo, website, email
+# `photo` is optional — falls back to a stylish initials avatar.
+# ─────────────────────────────────────────────────────────────
+
+pi:
+  name: "Anirudha Majumdar"
+  role: "Principal Investigator"
+  title: "Associate Professor"
+  affiliations:
+    - "Mechanical and Aerospace Engineering"
+    - "Associated Faculty, Computer Science"
+  photo: "assets/img/people/majumdar_anirudha.jpg"
+  website: "https://irom-lab.princeton.edu/majumdar"
+  email: "ani.majumdar [at] princeton.edu"
+
+postdocs:
+  - name: "Apurva Badithela"
+    role: "Postdoctoral Researcher"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/badithela_apurva.png"
+    website: "https://abadithela.github.io/"
+  - name: "Ola Shorinwa"
+    role: "Postdoctoral Researcher"
+    department: "Mechanical and Aerospace Engineering"
+    website: "https://os-hash.github.io/"
+
+phd_students:
+  - name: "Zhiting (May) Mei"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/mei_zhiting.jpg"
+    website: "https://may0mei.github.io/"
+  - name: "Asher Hancock"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/hancock_asher.jpg"
+    website: "https://aasherh.github.io/"
+  - name: "Tenny Yin"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/yin_tenny.jpg"
+    website: "https://tenny-yinyijun.github.io/"
+  - name: "Lihan Zha"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/zha_lihan.jpg"
+    website: "https://lihzha.github.io/"
+  - name: "Catherine Zheng"
+    department: "Mechanical and Aerospace Engineering"
+    photo: "assets/img/people/zheng_catherine.jpg"
+  - name: "Kechen Liu"
+    department: "Computer Science"
+    photo: "assets/img/people/liu_kechen.png"
+  - name: "Yanbo Xu"
+    department: "Computer Science"
+    photo: "assets/img/people/xu_yanbo.jpg"
+    website: "https://www.yanboxu.com/"
+
+undergrads:
+  - { name: "Miyu Yamane",   department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/yamane_miyu.jpg" }
+  - { name: "Jeremy Bao",    department: "Operations Research & Financial Engineering",   photo: "assets/img/people/bao_jeremy.png" }
+  - { name: "David Wang",    department: "Electrical and Computer Engineering",           photo: "assets/img/people/wang_david.jpeg" }
+  - { name: "Michael Zhang", department: "Mathematics",                                   photo: "assets/img/people/zhang_michael.jpg" }
+  - { name: "Micah Baker",   department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/baker_micah.jpg" }
+  - { name: "Jade Sceats",   department: "Electrical and Computer Engineering",           photo: "assets/img/people/sceats_jade.jpg" }
+  - { name: "Julian Mendes", department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/mendes_julian.jpg" }
+
+alumni:
+  phd:
+    - { name: "Justin Lidard",    website: "https://jlidard.github.io/site/",      next: "Google Deepmind" }
+    - { name: "David Snyder",     website: "https://dasnyder5.github.io/",      next: "Postdoctoral Fellow, University of Pennsylvania" }
+    - { name: "Nate Simon",       website: "https://natesimon.github.io/",      next: "Zoox" }
+    - { name: "Allen Z. Ren",     website: "https://allenzren.github.io/",      next: "Physical Intelligence" }
+    - { name: "Meghan Booker",    website: "https://www.megbooker.com/",        next: "Postdoctoral Fellow, JHU Applied Physics Lab" }
+    - { name: "Alec Farid",       website: "https://www.aalec.co/",             next: "Zoox" }
+    - { name: "Vincent Pacelli",  website: "https://pacel.li/",                 next: "Postdoctoral Scholar, Georgia Tech" }
+  postdoc:
+    - { name: "Anushri Dixit",    website: "https://www.anushridixit.com/",     next: "Assistant Professor, UCLA" }
+    - { name: "Sushant Veer",     website: "https://sushantveer.github.io/",   next: "Senior Research Scientist, NVIDIA (Autonomous Vehicles)" }
+  masters:
+    - { name: "Alexandra (Sasha) Bodrova", next: "PhD student, Princeton (MAE)" }
+    - { name: "Divi Pachisia (Undergrad/Master's)", next: "Skydio" }
+  undergrad:
+    - { name: "Emily Zhou" }
+    - { name: "Hugh Salva",              next: "Bachelors student in Mechanical Engineering (Harvard)" }
+    - { name: "Joseph Mikhail",          next: "Masters student in Aerospace Engineering (UT Austin)" }
+    - { name: "Andrew Oliver" }
+    - { name: "Hang Pham" }
+    - { name: "Bryan Boateng",           next: "PhD student, Stanford (AeroAstro)"  }
+    - { name: "John Wallace",            next: "SpaceX" }
+    - { name: "Mariko Storey-Matsutani", next: "PhD student, Stanford (AeroAstro)" }
+    - { name: "Skywalker Li",            next: "Applied Intuition" }
+    - { name: "Jimmy Tran",              next: "Masters student, CU Boulder (Robotics)" }
+    - { name: "Dylan Epsteingross",      next: "Jane Street" }
+    - { name: "Arti Schmidt",            next: "SpaceX" }
+    - { name: "Ariel Bachman",           next: "Masters student, Stanford" }
+    - { name: "Kyle Ikuma",              next: "Skydio" }
+    - { name: "Sandy Zhang" }
+    - { name: "Abhinav Agarwal",         next: "PhD student, MIT (EECS)" }
+    - { name: "Michelle Ho",             next: "PhD student, Stanford (AeroAstro)" }
+    - { name: "Neil Hazra",              next: "PhD student, Columbia (Applied Physics)" }
+    - { name: "Daphne Barretto",         next: "Microsoft" }
+    - { name: "Alex Fay (Visiting Undergrad)" }
+    - { name: "Will Huang" }
+    - { name: "David Fu" }
+    - { name: "Miguel Opena",            next: "Palantir" }
+    - { name: "Kristen Ahner",           next: "PhD student, CU Boulder" }
+    - { name: "Naomi Oke",               next: "PhD student, CMU (MechE)" }
+    - { name: "Shri Deshmukh (Visiting Undergrad)" }
+    - { name: "Jovana Kondic",           next: "PhD student, MIT (EECS)" }
+    - { name: "Bennett Holmes",          next: "Boston Consulting Group" }
+    - { name: "Peter Fisher",            next: "PhD student, MIT (MechE)" }
+    - { name: "Douglas Chin",            next: "Master's student, Georgia Tech" }
+    - { name: "Anoop Sonar",             next: "PhD student, MIT (EECS)" }
+    - { name: "Gabe Roth",               next: "System Engineer, Danbury Mission Technologies" }
+    - { name: "Gargi Sadalgekar",        next: "Master's student, Johns Hopkins University" }

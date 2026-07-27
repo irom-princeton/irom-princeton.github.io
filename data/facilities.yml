@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────
+# Lab facilities & equipment.
+# ─────────────────────────────────────────────────────────────
+
+primary:
+  name: "Motion Capture Arena"
+  description: |
+    Our primary testing space — an 85 × 25 × 14 ft facility for
+    unmanned aerial vehicles and ground robots. It includes a motion
+    capture arena instrumented with **16 Vicon V16 cameras** covering
+    approximately 60 × 25 × 14 ft.
+  image: "assets/img/lab/lab.jpg"
+
+secondary:
+  - name: "Student & Postdoc Workspace"
+    description: |
+      Office space for students and postdocs with a connected basement
+      area containing workbenches and a testing area.
+    image: "assets/img/lab/lab-equad.jpg"
+
+shared:
+  description: |
+    Lab members additionally have access to a variety of robotics
+    facilities at Princeton, both shared and dedicated.
+  link: "https://robo.princeton.edu/facilities"

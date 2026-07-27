@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────
+# "Join us" page content. Edit the markdown bodies below — the page
+# picks them up automatically.
+# ─────────────────────────────────────────────────────────────
+
+intro: |
+  We are always looking for talented and motivated people to join the lab.
+  Below is the right path depending on your stage. We read every email,
+  but please follow the relevant guidance so we can route yours quickly.
+
+sections:
+  - title: "Prospective PhD students"
+    body: |
+      The lab admits PhD students through the
+      [Princeton MAE](https://mae.princeton.edu/grad-program) and
+      [Princeton Computer Science](https://www.cs.princeton.edu/grad/) PhD
+      programs.
+
+      **Apply directly to one of those programs** and mention Prof. Majumdar
+      in your statement if our work aligns with your interests. Due to the
+      volume of email, the PI is generally unable to respond to individual
+      pre-application inquiries.
+
+  - title: "Postdocs"
+    body: |
+      We periodically host postdoctoral researchers. If your research
+      interests align strongly with the lab's, please email Prof. Majumdar
+      with your CV, a short research statement, and 2–3 representative
+      papers.
+
+  - title: "Princeton undergraduates"
+    body: |
+      Princeton undergraduates interested in research with the lab —
+      including senior theses, junior independent work, and summer
+      research — are encouraged to email Prof. Majumdar directly with
+      a brief description of your background and interests.
+
+  - title: "Visiting students & interns"
+    body: |
+      We occasionally host visiting students from other institutions.
+      Spots are limited; please email the PI well in advance with your
+      proposed dates, advisor, and a short research statement.
+
+contact:
+  text: "Questions? Email"
+  email: "ani.majumdar [at] princeton.edu"
