@@ -1035,12 +1035,17 @@ section + section { margin-top: 64px; }
   gap: 12px;
 }
 .repo__meta .lang { font-family: var(--mono); }
-.repo__stars {
+.repo__stars,
+.repo__forks {
   display: inline-flex; align-items: center;
+  gap: 4px;
   font-weight: 600;
   color: var(--ink-soft);
 }
-.repo__stars:empty { display: none; }
+.repo__stars svg,
+.repo__forks svg { flex: none; }
+.repo__stars:empty,
+.repo__forks:empty { display: none; }
 
 /* ─────────── Courses ─────────── */
 .course {

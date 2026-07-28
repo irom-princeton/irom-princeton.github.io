@@ -30,6 +30,10 @@ async function loadAll() {
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
+// GitHub Octicons (star-16, repo-forked-16) — same icons GitHub uses on repo pages.
+const ICON_STAR = '<svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.79L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path></svg>';
+const ICON_FORK = '<svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>';
+
 function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
@@ -602,9 +606,11 @@ function renderSoftware() {
     if (r.description) card.appendChild(el("p", { class: "repo__desc" }, r.description));
     const meta = el("p", { class: "repo__meta" });
     if (r.language) meta.appendChild(el("span", { class: "lang" }, r.language));
-    // Star count placeholder — populated async from GitHub API
+    // Star/fork count placeholders — populated async from GitHub API
     const starsEl = el("span", { class: "repo__stars", "data-repo": r.url }, "");
     meta.appendChild(starsEl);
+    const forksEl = el("span", { class: "repo__forks", "data-repo": r.url }, "");
+    meta.appendChild(forksEl);
     if (r.paper) {
       const p = (DATA.publications || []).find(x => x.id === r.paper);
       if (p) {
@@ -618,28 +624,36 @@ function renderSoftware() {
     grid.appendChild(card);
   });
   host.appendChild(grid);
-  fetchGithubStars();
+  fetchGithubStats();
 }
 
-/** Populate each .repo__stars span with the live GitHub star count.
-    Uses Promise.allSettled so one repo's failure doesn't block others. */
-function fetchGithubStars() {
-  const targets = $$(".repo__stars");
-  targets.forEach(async (span) => {
-    const url = span.dataset.repo || "";
+/** Populate each repo card's .repo__stars and .repo__forks spans with live
+    GitHub counts. One fetch per repo (not per span) to stay under the
+    unauthenticated API rate limit. */
+function fetchGithubStats() {
+  const cards = $$(".repo__stars[data-repo]");
+  cards.forEach(async (starsEl) => {
+    const url = starsEl.dataset.repo || "";
     const m = url.match(/github\.com\/([^/]+)\/([^/?#]+)/);
     if (!m) return;
     const [, owner, repo] = m;
+    const forksEl = starsEl.nextElementSibling;
     try {
       const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`,
                               { headers: { "Accept": "application/vnd.github+json" } });
       if (!res.ok) return;
       const data = await res.json();
       const stars = data.stargazers_count;
-      if (typeof stars !== "number") return;
-      span.textContent = "★ " + stars.toLocaleString();
-      span.title = `${stars.toLocaleString()} stargazers on GitHub`;
-    } catch (_) { /* swallow — leave the cell empty */ }
+      if (typeof stars === "number") {
+        starsEl.innerHTML = ICON_STAR + stars.toLocaleString();
+        starsEl.title = `${stars.toLocaleString()} stargazers on GitHub`;
+      }
+      const forks = data.forks_count;
+      if (forksEl && typeof forks === "number") {
+        forksEl.innerHTML = ICON_FORK + forks.toLocaleString();
+        forksEl.title = `${forks.toLocaleString()} forks on GitHub`;
+      }
+    } catch (_) { /* swallow — leave the cells empty */ }
   });
 }
 

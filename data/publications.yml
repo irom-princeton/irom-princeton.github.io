@@ -14,7 +14,6 @@
 
 
 - id: beyond_binary
-  type: preprint
   title: "Beyond Binary Success: Sample-Efficient and Statistically Rigorous Robot Policy Comparison"
   thumbnail: "assets/img/publications/beyond_binary.png"
   authors: ["David Snyder", "Apurva Badithela", "Nikolai Matni", "George Pappas", "Anirudha Majumdar", "Masha Itkina", "Haruki Nishimura"]
@@ -35,7 +34,6 @@
   thumbnail: "assets/img/publications/playworld.png"
 
 - id: lap
-  type: preprint
   title: "LAP: Language-Action Pre-training Enables Zero-Shot Cross-Embodiment Transfer"
   authors: ["Lihan Zha", "Asher Hancock", "Mingtong Zhang", "Tenny Yin", "Yixuan Huang", "Dhruv Shah", "Allen Z. Ren", "Anirudha Majumdar"]
   venue: "Robotics: Science and Systems (RSS)"
@@ -72,6 +70,15 @@
   venue: "European Chapter of the Association for Computational Linguistics (EACL)"
   year: 2026
   links: { arxiv: "https://arxiv.org/abs/2506.18183" }
+
+- id: thesis_lidard
+  type: thesis
+  title: "Robot Learning For and From Humans: Scalable Algorithms and Safety Assurances"
+  thumbnail: "assets/img/publications/risk_calibrated_hri.png"
+  authors: ["Justin Lidard"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2026
+  links: { project: "https://jlidard.github.io/jlidard.github.io/" }
 
 - id: womap
   title: "WoMAP: World Models for Embodied Open-Vocabulary Object Localization"
@@ -299,6 +306,33 @@
     arxiv: "https://arxiv.org/abs/2503.20020"
     blog: "https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/"
 
+- id: thesis_snyder
+  type: thesis
+  title: "Nonasymptotic Methods for Guaranteed Robotic Policy Synthesis and Evaluation"
+  thumbnail: "assets/img/publications/policy_comparison.png"
+  authors: ["David Snyder"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2025
+  links: { project: "https://dasnyder5.github.io/" }
+
+- id: thesis_simon
+  type: thesis
+  title: "Learned Perception Modules for Autonomous Aerial Vehicle Navigation and Control"
+  thumbnail: "assets/img/publications/mononav.png"
+  authors: ["Nathaniel Simon"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2025
+  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/07/Simon_princeton_0181D_15442-1.pdf" }
+
+- id: thesis_ren
+  type: thesis
+  title: "Towards Robust and Provably Generalizable Robot Learning"
+  thumbnail: "assets/img/publications/robot_help.png"
+  authors: ["Allen Z. Ren"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2025
+  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Ren_princeton_thesis.pdf" }
+
 - id: perceive_confidence
   title: "Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception"
   authors: ["Anushri Dixit", "Zhiting Mei", "Meghan Booker", "Mariko Storey-Matsutani", "Allen Z. Ren", "Anirudha Majumdar"]
@@ -375,6 +409,15 @@
   links:
     arxiv: "https://arxiv.org/abs/2512.10675"
     project: "https://veo-robotics.github.io/"
+
+- id: thesis_booker
+  type: thesis
+  title: "Task-Driven Perception and Control for Robust and Efficient Autonomy"
+  thumbnail: "assets/img/publications/amr_policies.png"
+  authors: ["Meghan Booker"]
+  venue: "Ph.D. Thesis, Princeton University"
+  year: 2024
+  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Booker_princeton_0181D_14988.pdf" }
 
 - id: pac_bayes_icp
   title: "PAC-Bayes Generalization Certificates for Learned Inductive Conformal Prediction"
