@@ -477,7 +477,7 @@ function renderPeople() {
     list.forEach(p => grid.appendChild(personCard(p)));
     host.appendChild(grid);
   };
-  renderMemberGroup("Graduate Students", graduate);
+  renderMemberGroup("Postdocs and Graduate Students", graduate);
   renderMemberGroup("Undergraduate Students", undergraduate);
 
   // Alumni
