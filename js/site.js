@@ -144,7 +144,7 @@ function renderHeader(activePage) {
     "aria-label": lab.short_name || lab.name
   });
   brand.appendChild(el("img", {
-    src: "assets/img/logos/irom_lab_logo.png",
+    src: "assets/img/logos/irom_lab_logo_transparent.png",
     alt: lab.short_name || lab.name
   }));
   inner.appendChild(brand);
@@ -520,24 +520,43 @@ function renderPeople() {
   }
 }
 
-/** Drive the hero video: ordered playlist 1→2→3→4, looping, with
-    prev/next arrows the user can click to step through clips. */
+/** Drive the hero rotation: ordered playlist of clips and/or photos,
+    looping, with prev/next arrows the user can click to step through. */
 function initHeroVideo() {
   const video = $(".hero-video__media");
   if (!video) return;
+  const photo = $(".hero-video__photo");
   const raw = video.dataset.playlist || "";
   const playlist = raw.split(",").map(s => s.trim()).filter(Boolean);
   if (!playlist.length) return;
 
   const posLabel = $("#hero-pos");
+  const PHOTO_DURATION = 6000;
+  const isPhoto = (src) => /\.(png|jpe?g|webp|gif)$/i.test(src);
   let idx = 0;
+  let photoTimer = null;
 
   const playAt = (i) => {
+    clearTimeout(photoTimer);
     idx = ((i % playlist.length) + playlist.length) % playlist.length;
-    video.src = playlist[idx];
-    video.load();
-    const p = video.play();
-    if (p && typeof p.catch === "function") p.catch(() => {}); // ignore autoplay block
+    const src = playlist[idx];
+
+    if (isPhoto(src)) {
+      video.pause();
+      video.style.display = "none";
+      if (photo) {
+        photo.src = src;
+        photo.style.display = "block";
+      }
+      photoTimer = setTimeout(() => playAt(idx + 1), PHOTO_DURATION);
+    } else {
+      if (photo) photo.style.display = "none";
+      video.style.display = "";
+      video.src = src;
+      video.load();
+      const p = video.play();
+      if (p && typeof p.catch === "function") p.catch(() => {}); // ignore autoplay block
+    }
     if (posLabel) posLabel.textContent = `${idx + 1} / ${playlist.length}`;
   };
 

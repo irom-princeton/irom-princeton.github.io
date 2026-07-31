@@ -212,6 +212,7 @@ section + section { margin-top: 64px; }
   /* hidden until <video> resolves a source; the no-video class also hides it */
 }
 .hero-video--no-video .hero-video__media { display: none; }
+.hero-video__photo { display: none; }
 
 /* Fallback: a dark red→black gradient with a subtle radial accent when
    no video source has loaded. Looks intentional, not broken. */
