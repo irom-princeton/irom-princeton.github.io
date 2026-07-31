@@ -1,0 +1,55 @@
+# ─────────────────────────────────────────────────────────────
+# Anirudha Majumdar's personal profile page (majumdar.html).
+# Content mirrors https://irom-lab.princeton.edu/majumdar/ exactly;
+# only visual styling differs. Self-referential "lab webpage" links
+# point at this site's own index.html rather than the old domain.
+# ─────────────────────────────────────────────────────────────
+name: "Anirudha Majumdar"
+photo: "assets/img/people/majumdar_anirudha.jpg"
+
+positions:
+  - "*Associate Professor,* [Mechanical and Aerospace Engineering](https://mae.princeton.edu/)"
+  - "*Co-Director*, Princeton Robotics Initiative"
+  - "*Associated Faculty*, [Computer Science](https://www.cs.princeton.edu/)"
+  - "[Princeton University](http://princeton.edu/)"
+  - "*Visiting Research Scientist*, [Google DeepMind @ Princeton](https://minimizingregret.wordpress.com/people/)"
+
+contact:
+  email: "ani.majumdar at princeton . edu"
+  office: "EQuad D202-B"
+
+links:
+  lab: "index.html"
+  twitter: "https://twitter.com/Majumdar_Ani"
+  youtube: "https://www.youtube.com/channel/UCO5b_xm_7rynezQ4aN8SRUg"
+
+research_interests: |
+  I am interested in developing generalist robots that are safe,
+  trustworthy, and capable. Recently, my group has been developing
+  techniques to improve generalist capabilities, ensure safety and
+  alignment with human values and preferences, and evaluate large-scale
+  robot policies via simulation and hardware-based testing and red
+  teaming. Please see our [lab webpage](index.html) for more information.
+
+bio: |
+  Anirudha Majumdar is an Associate Professor at Princeton University in
+  the Mechanical and Aerospace Engineering (MAE) department, and
+  co-Director of the Princeton Robotics Initiative. He also holds a
+  part-time visiting research scientist position at Google DeepMind in
+  Princeton. Majumdar received a Ph.D. in Electrical Engineering and
+  Computer Science from the Massachusetts Institute of Technology in 2016,
+  and a B.S.E. in Mechanical Engineering and Mathematics from the
+  University of Pennsylvania in 2011. Subsequently, he was a postdoctoral
+  scholar at Stanford University from 2016 to 2017 at the Autonomous
+  Systems Lab in the Aeronautics and Astronautics department.
+
+honors: |
+  He is a recipient of the Sloan Fellowship, ONR Young Investigator
+  Program (YIP) award, NSF CAREER award, Google Faculty Research Award
+  (twice), Amazon Research Award (twice), Young Faculty Researcher Award
+  from the Toyota Research Institute, Best Student Paper Award (as
+  advisor) at the Conference on Robot Learning (CoRL), Paper of the Year
+  Award from the International Journal of Robotics Research (IJRR), Best
+  Conference Paper Award at the International Conference on Robotics and
+  Automation (ICRA), Alfred Rheinstein Faculty Award (Princeton), and the
+  Excellence in Teaching Award (Princeton SEAS).

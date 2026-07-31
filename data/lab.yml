@@ -3,7 +3,7 @@
 # ─────────────────────────────────────────────────────────────
 name: "Intelligent Robot Motion Lab"
 short_name: "IRoM Lab"
-tagline: "We work on generalist robots that are safe, trustworthy, and capable."
+tagline: "We work on generalist robots that are helpful, safe, and trustworthy."
 
 pi:
   name: "Anirudha Majumdar"
@@ -14,7 +14,7 @@ pi:
   institution: "Princeton University"
   email: "ani.majumdar [at] princeton.edu"
   office: "EQuad D202-B"
-  website: "https://irom-lab.princeton.edu/majumdar"
+  website: "majumdar.html"
 
 institution:
   name: "Princeton University"

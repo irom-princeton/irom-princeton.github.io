@@ -857,10 +857,16 @@ section + section { margin-top: 64px; }
 .pi-card h2 { margin-top: 0; font-size: 1.7rem; }
 .pi-card .meta { color: var(--slate); margin: 4px 0; }
 .pi-card .meta strong { color: var(--ink); }
+.profile-links strong a { margin-right: 16px; }
+.profile-links strong a:last-child { margin-right: 0; }
 @media (max-width: 700px) {
   .pi-card { grid-template-columns: 1fr; padding: 24px; gap: 20px; }
   .pi-card__photo { max-width: 200px; }
 }
+
+/* Profile page (majumdar.html): tighter section spacing than the site default */
+#majumdar .pi-card { margin-bottom: 32px; }
+#majumdar h2 { margin-top: 1.3em; }
 
 /* Alumni list */
 .alumni-section h3 {

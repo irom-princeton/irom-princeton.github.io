@@ -6,7 +6,7 @@
 const DATA = {};
 const DATA_FILES = [
   "lab", "people", "publications", "research",
-  "news", "press", "courses", "software", "facilities", "join"
+  "news", "press", "courses", "software", "facilities", "join", "majumdar"
 ];
 
 /* ─── Loader ─── */
@@ -458,7 +458,7 @@ function renderPeople() {
     body.appendChild(el("p", { class: "meta" }, "📧 ", el("strong", {}, pi.email)));
     if (pi.office) body.appendChild(el("p", { class: "meta" }, "📍 ", pi.office));
     if (pi.website) body.appendChild(el("p", { class: "meta" },
-      el("a", { href: pi.website, target: "_blank", rel: "noopener" }, "Personal website ↗")
+      el("a", { href: pi.website }, "Personal website →")
     ));
     card.appendChild(body);
     host.appendChild(card);
@@ -776,6 +776,48 @@ function renderJoin() {
   }
 }
 
+function renderMajumdar() {
+  const host = $("#majumdar");
+  if (!host || !DATA.majumdar) return;
+  host.innerHTML = "";
+  const p = DATA.majumdar;
+
+  const card = el("section", { class: "pi-card" });
+  const photo = el("div", { class: "pi-card__photo" });
+  if (p.photo) photo.appendChild(el("img", { src: p.photo, alt: p.name }));
+  else photo.appendChild(el("div", { class: "person__initials" },
+    p.name.split(" ").map(w => w[0]).slice(0, 2).join("")));
+  card.appendChild(photo);
+
+  const body = el("div", {});
+  body.appendChild(el("h2", {}, p.name));
+  (p.positions || []).forEach(pos => body.appendChild(el("p", { class: "meta", html: md(pos) })));
+  if (p.contact?.email) body.appendChild(el("p", { class: "meta" }, "Email: " + p.contact.email));
+  if (p.contact?.office) body.appendChild(el("p", { class: "meta" }, "Office: " + p.contact.office));
+  if (p.links) {
+    const linkP = el("p", { class: "meta profile-links" });
+    const strong = el("strong", {});
+    if (p.links.lab) strong.appendChild(el("a", { href: p.links.lab }, "Lab webpage."));
+    if (p.links.twitter) strong.appendChild(el("a", { href: p.links.twitter, target: "_blank", rel: "noopener" }, "Twitter."));
+    if (p.links.youtube) strong.appendChild(el("a", { href: p.links.youtube, target: "_blank", rel: "noopener" }, "YouTube."));
+    linkP.appendChild(strong);
+    body.appendChild(linkP);
+  }
+  card.appendChild(body);
+  host.appendChild(card);
+
+  if (p.research_interests) {
+    host.appendChild(el("h2", {}, "Research Interests"));
+    host.appendChild(el("p", { html: md(p.research_interests.trim()) }));
+  }
+
+  if (p.bio) {
+    host.appendChild(el("h2", {}, "Bio"));
+    host.appendChild(el("p", { html: md(p.bio.trim()) }));
+    if (p.honors) host.appendChild(el("p", { html: md(p.honors.trim()) }));
+  }
+}
+
 /* ─── Boot ─── */
 
 async function boot() {
@@ -793,6 +835,7 @@ async function boot() {
     case "press":        renderPress();        break;
     case "facilities":   renderFacilities();   break;
     case "join":         renderJoin();         break;
+    case "majumdar":     renderMajumdar();     break;
   }
   renderFooter();
 }
