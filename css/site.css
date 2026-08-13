@@ -39,6 +39,22 @@
   --t: 180ms cubic-bezier(.2,.7,.3,1);
 }
 
+/* Smooth cross-document navigation between pages (progressive enhancement —
+   unsupported browsers just keep instant navigation). The header is tagged
+   so the browser treats it as the same persistent element across the page
+   load instead of a hard cut, which is what reads as a "flash" on click. */
+@view-transition {
+  navigation: auto;
+}
+.site-header { view-transition-name: site-header; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
 * { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
@@ -57,7 +73,7 @@ img { max-width: 100%; height: auto; display: block; }
 a {
   color: var(--orange-deep);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--orange-deep); /* visible underline so links aren't identified by color alone (WCAG 1.4.11) */
   transition: color var(--t), border-color var(--t);
 }
 a:hover { color: var(--orange); border-bottom-color: var(--orange); }
@@ -103,6 +119,10 @@ section + section { margin-top: 64px; }
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   backdrop-filter:         saturate(180%) blur(14px);
   border-bottom: 1px solid var(--line);
+  /* Reserve the header's rendered height up front — it and the nav are
+     injected by JS after the data fetch resolves, so without this the
+     page loads at 0 height and visibly jumps down once they land. */
+  min-height: 111px;
 }
 .site-header__inner {
   max-width: 1360px;
@@ -149,7 +169,7 @@ section + section { margin-top: 64px; }
   transition: color var(--t), background var(--t);
 }
 .site-nav a:hover { color: var(--ink); background: var(--bg-muted); }
-.site-nav a.is-active { color: var(--ink); background: var(--orange-soft); }
+.site-nav a.is-active { color: #fff; background: var(--accent); }
 
 .nav-toggle {
   display: none;
@@ -311,6 +331,7 @@ section + section { margin-top: 64px; }
   color: #fff;
   transform: scale(1.06);
 }
+.hero-play { font-size: 1.05rem; }
 .hero-pos {
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -873,7 +894,7 @@ section + section { margin-top: 64px; }
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--slate-light);
+  color: var(--slate);
   font-family: var(--sans);
   font-weight: 600;
   margin-top: 32px;
@@ -886,7 +907,7 @@ section + section { margin-top: 64px; }
 }
 .alumni-list li { font-size: 0.94rem; color: var(--ink-soft); }
 .alumni-list .next {
-  color: var(--slate-light); font-size: 0.86rem;
+  color: var(--slate); font-size: 0.86rem;
   margin-left: 6px;             /* space between name and destination */
 }
 .alumni-undergrad {
@@ -1102,6 +1123,36 @@ section + section { margin-top: 64px; }
 .site-footer a { color: var(--slate); border: none; }
 .site-footer a:hover { color: var(--orange-deep); }
 
+/* Princeton University required footer band: full-bleed dark bar so the
+   white PU wordmark reads correctly (matches princeton.edu's own footer). */
+.site-footer__pu {
+  background: var(--ink);
+  margin-top: 24px;
+}
+.site-footer__pu-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 28px;
+  padding: 22px var(--gutter);
+}
+.site-footer__pu-logo { display: inline-flex; border: none; line-height: 0; }
+.site-footer__pu-logo img { height: 26px; width: auto; display: block; }
+.site-footer__pu-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 22px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.82rem;
+}
+.site-footer__pu-links a { color: rgba(255, 255, 255, 0.85); border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+.site-footer__pu-links a:hover { color: #fff; border-bottom-color: #fff; }
+@media (max-width: 700px) {
+  .site-footer__pu-inner { padding: 18px 16px; }
+}
+
 /* ─────────── Utility ─────────── */
 .loading {
   color: var(--slate-light);
@@ -1111,6 +1162,7 @@ section + section { margin-top: 64px; }
 .hidden { display: none !important; }
 
 @media (max-width: 720px) {
+  .site-header { min-height: 105px; }
   .site-nav { display: none; gap: 0; width: 100%; flex-direction: column; align-items: stretch; padding-top: 12px; }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 10px 12px; border-radius: 0; }

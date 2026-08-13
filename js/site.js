@@ -11,18 +11,16 @@ const DATA_FILES = [
 
 /* ─── Loader ─── */
 
-async function loadAll() {
-  await Promise.all(DATA_FILES.map(async (name) => {
-    try {
-      const res = await fetch(`data/${name}.yml`, { cache: "no-cache" });
-      if (!res.ok) throw new Error(`Failed to load data/${name}.yml`);
-      const text = await res.text();
-      DATA[name] = jsyaml.load(text);
-    } catch (err) {
-      console.error(err);
-      DATA[name] = null;
-    }
-  }));
+async function loadOne(name) {
+  try {
+    const res = await fetch(`data/${name}.yml`);
+    if (!res.ok) throw new Error(`Failed to load data/${name}.yml`);
+    const text = await res.text();
+    DATA[name] = jsyaml.load(text);
+  } catch (err) {
+    console.error(err);
+    DATA[name] = null;
+  }
 }
 
 /* ─── Helpers ─── */
@@ -152,7 +150,11 @@ function renderHeader(activePage) {
   const toggle = el("button", {
     class: "nav-toggle",
     "aria-label": "Toggle navigation",
-    onclick: () => $(".site-nav").classList.toggle("is-open")
+    "aria-expanded": "false",
+    onclick: () => {
+      const isOpen = $(".site-nav").classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    }
   }, "☰");
   inner.appendChild(toggle);
 
@@ -161,7 +163,8 @@ function renderHeader(activePage) {
     const isActive = (activePage && item.href === activePage);
     nav.appendChild(el("a", {
       href: item.href,
-      class: isActive ? "is-active" : null
+      class: isActive ? "is-active" : null,
+      "aria-current": isActive ? "page" : null
     }, item.label));
   }
   inner.appendChild(nav);
@@ -173,8 +176,9 @@ function renderFooter() {
   if (!lab) return;
   const host = $("#site-footer");
   if (!host) return;
-  const wrap = el("div", { class: "container" });
   const year = new Date().getFullYear();
+
+  const wrap = el("div", { class: "container" });
   wrap.appendChild(el("div", {},
     `© ${year} ${lab.footer.copyright_holder}`));
   const linksWrap = el("div", {});
@@ -187,6 +191,31 @@ function renderFooter() {
   }
   wrap.appendChild(linksWrap);
   host.appendChild(wrap);
+
+  // Princeton University required footer band: logo, Trustee copyright,
+  // Diversity & Non-Discrimination and Accessibility Help links.
+  const pu = lab.footer || {};
+  if (pu.princeton_logo) {
+    const band = el("div", { class: "site-footer__pu" });
+    const inner = el("div", { class: "container site-footer__pu-inner" });
+    inner.appendChild(el("a", {
+      href: pu.princeton_url || "https://www.princeton.edu",
+      class: "site-footer__pu-logo",
+      "aria-label": "Princeton University"
+    }, el("img", { src: pu.princeton_logo, alt: "Princeton University" })));
+
+    const puLinks = el("div", { class: "site-footer__pu-links" });
+    puLinks.appendChild(el("span", {}, `© ${year} The Trustees of Princeton University`));
+    if (pu.diversity_url) {
+      puLinks.appendChild(el("a", { href: pu.diversity_url }, "Diversity & Non-Discrimination"));
+    }
+    if (pu.accessibility_url) {
+      puLinks.appendChild(el("a", { href: pu.accessibility_url }, "Accessibility Help"));
+    }
+    inner.appendChild(puLinks);
+    band.appendChild(inner);
+    host.appendChild(band);
+  }
 }
 
 /* ─── Publication renderer ─── */
@@ -521,7 +550,8 @@ function renderPeople() {
 }
 
 /** Drive the hero rotation: ordered playlist of clips and/or photos,
-    looping, with prev/next arrows the user can click to step through. */
+    looping, with prev/next arrows and a play/pause toggle the user can
+    use to step through or stop the motion. */
 function initHeroVideo() {
   const video = $(".hero-video__media");
   if (!video) return;
@@ -531,10 +561,21 @@ function initHeroVideo() {
   if (!playlist.length) return;
 
   const posLabel = $("#hero-pos");
+  const playToggle = $("#hero-playtoggle");
   const PHOTO_DURATION = 6000;
   const isPhoto = (src) => /\.(png|jpe?g|webp|gif)$/i.test(src);
   let idx = 0;
   let photoTimer = null;
+  // Honor the OS-level "reduce motion" accessibility setting: start paused
+  // on the poster frame instead of autoplaying (WCAG 2.2.2).
+  let paused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const syncPlayToggle = () => {
+    if (!playToggle) return;
+    playToggle.textContent = paused ? "▶" : "⏸";
+    playToggle.setAttribute("aria-label", paused ? "Play video" : "Pause video");
+    playToggle.setAttribute("aria-pressed", String(!paused));
+  };
 
   const playAt = (i) => {
     clearTimeout(photoTimer);
@@ -548,27 +589,48 @@ function initHeroVideo() {
         photo.src = src;
         photo.style.display = "block";
       }
-      photoTimer = setTimeout(() => playAt(idx + 1), PHOTO_DURATION);
+      if (!paused) photoTimer = setTimeout(() => playAt(idx + 1), PHOTO_DURATION);
     } else {
       if (photo) photo.style.display = "none";
       video.style.display = "";
       video.src = src;
       video.load();
-      const p = video.play();
-      if (p && typeof p.catch === "function") p.catch(() => {}); // ignore autoplay block
+      if (!paused) {
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(() => {}); // ignore autoplay block
+      }
     }
     if (posLabel) posLabel.textContent = `${idx + 1} / ${playlist.length}`;
   };
 
-  video.addEventListener("ended", () => playAt(idx + 1));
+  video.addEventListener("ended", () => { if (!paused) playAt(idx + 1); });
   // If a clip fails to load, hop to the next instead of stalling
-  video.addEventListener("error", () => playAt(idx + 1));
+  video.addEventListener("error", () => { if (!paused) playAt(idx + 1); });
 
-  $$(".hero-arrow").forEach(btn => {
+  // data-step distinguishes the prev/next arrows from the play/pause toggle,
+  // which shares the same .hero-arrow styling but has no step to take.
+  $$(".hero-arrow[data-step]").forEach(btn => {
     const step = parseInt(btn.dataset.step, 10) || 1;
     btn.addEventListener("click", () => playAt(idx + step));
   });
 
+  if (playToggle) {
+    playToggle.addEventListener("click", () => {
+      paused = !paused;
+      syncPlayToggle();
+      if (paused) {
+        clearTimeout(photoTimer);
+        video.pause();
+      } else if (isPhoto(playlist[idx])) {
+        photoTimer = setTimeout(() => playAt(idx + 1), PHOTO_DURATION);
+      } else {
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
+      }
+    });
+  }
+
+  syncPlayToggle();
   playAt(0);
 }
 
@@ -818,12 +880,61 @@ function renderMajumdar() {
   }
 }
 
+/** Research page thrust panels have small looping preview videos, hand-authored
+    directly in the HTML. Give each a play/pause control and honor
+    prefers-reduced-motion instead of hard-coded autoplay (WCAG 2.2.2 A). */
+function initInlineVideos() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  $$(".irom-research .video").forEach(wrap => {
+    const video = $("video", wrap);
+    if (!video) return;
+
+    const btn = el("button", { type: "button", class: "vid-toggle" });
+    wrap.appendChild(btn);
+
+    const sync = () => {
+      const paused = video.paused;
+      btn.textContent = paused ? "▶" : "⏸";
+      btn.setAttribute("aria-label", paused ? "Play video" : "Pause video");
+      btn.setAttribute("aria-pressed", String(!paused));
+    };
+
+    btn.addEventListener("click", () => {
+      if (video.paused) {
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+    video.addEventListener("play", sync);
+    video.addEventListener("pause", sync);
+
+    sync();
+    if (!prefersReducedMotion) {
+      const p = video.play();
+      if (p && typeof p.catch === "function") p.catch(() => {});
+    }
+  });
+}
+
 /* ─── Boot ─── */
 
 async function boot() {
-  await loadAll();
   const page = document.body.dataset.page;
-  renderHeader(page ? `${page}.html` : "index.html");
+
+  // Render the header as soon as the small lab.yml file lands, rather than
+  // waiting on the whole data batch (publications.yml alone is 15x bigger) —
+  // that wait was what made the logo/nav visibly pop in late on every
+  // navigation, even though the header only depends on lab.yml.
+  const headerReady = loadOne("lab").then(() => {
+    renderHeader(page ? `${page}.html` : "index.html");
+  });
+  const restReady = Promise.all(
+    DATA_FILES.filter(name => name !== "lab").map(loadOne)
+  );
+  await Promise.all([headerReady, restReady]);
 
   switch (page) {
     case "index":        renderHome();         break;
@@ -837,6 +948,7 @@ async function boot() {
     case "join":         renderJoin();         break;
     case "majumdar":     renderMajumdar();     break;
   }
+  initInlineVideos();
   renderFooter();
 }
 

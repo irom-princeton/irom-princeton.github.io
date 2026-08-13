@@ -41,3 +41,7 @@ social:
 
 footer:
   copyright_holder: "Intelligent Robot Motion Lab, Princeton University"
+  princeton_logo: "assets/img/logos/princeton-logo-white.svg"
+  princeton_url: "https://www.princeton.edu"
+  diversity_url: "https://inclusive.princeton.edu/about/our-commitment-equal-opportunity-and-non-discrimination"
+  accessibility_url: "https://accessibility.princeton.edu/resources/accessibility-help"

@@ -215,6 +215,15 @@
     background:#111;border:1px solid var(--line);
   }
   .irom-research .video video, .irom-research .video iframe, .irom-research .video img{width:100%;height:100%;object-fit:cover;display:block;border:0}
+  .irom-research .vid-toggle{
+    position:absolute;right:10px;bottom:10px;z-index:2;
+    width:32px;height:32px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.45);background:rgba(0,0,0,.45);color:rgba(255,255,255,.92);
+    font-size:.9rem;line-height:1;cursor:pointer;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+    display:flex;align-items:center;justify-content:center;padding:0 0 1px;
+    transition:background .15s,transform .15s;
+  }
+  .irom-research .vid-toggle:hover{background:var(--red);border-color:var(--red);color:#fff;transform:scale(1.06)}
   /* placeholder look */
   .irom-research .video.ph{
     background:
@@ -262,7 +271,7 @@
     .irom-research .ribbon .step{border-left:none;border-top:1px solid var(--line)}
     .irom-research .ribbon .step:first-child{border-top:none}
     .irom-research .ribbon .step:not(:first-child)::before{display:none}
-    .irom-research .stage{grid-template-columns:1fr;gap:20px}
+    .irom-research .stage-body{grid-template-columns:1fr;gap:20px}
     .irom-research .stage-media{position:static}
     .irom-research .video{aspect-ratio:16/9}
     .irom-research .qpanel{padding-left:6px}
