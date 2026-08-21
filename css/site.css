@@ -1111,14 +1111,8 @@ section + section { margin-top: 64px; }
 /* ─────────── Footer ─────────── */
 .site-footer {
   margin-top: 96px;
-  padding: 32px 0 48px;
-  border-top: 1px solid var(--line);
   color: var(--slate);
   font-size: 0.88rem;
-}
-.site-footer .container {
-  display: flex; flex-wrap: wrap; gap: 16px;
-  justify-content: space-between;
 }
 .site-footer a { color: var(--slate); border: none; }
 .site-footer a:hover { color: var(--orange-deep); }
@@ -1127,7 +1121,6 @@ section + section { margin-top: 64px; }
    white PU wordmark reads correctly (matches princeton.edu's own footer). */
 .site-footer__pu {
   background: var(--ink);
-  margin-top: 24px;
 }
 .site-footer__pu-inner {
   display: flex;

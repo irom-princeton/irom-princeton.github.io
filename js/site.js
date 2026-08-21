@@ -178,20 +178,6 @@ function renderFooter() {
   if (!host) return;
   const year = new Date().getFullYear();
 
-  const wrap = el("div", { class: "container" });
-  wrap.appendChild(el("div", {},
-    `© ${year} ${lab.footer.copyright_holder}`));
-  const linksWrap = el("div", {});
-  if (lab.social?.github) {
-    linksWrap.appendChild(el("a", { href: lab.social.github, target: "_blank", rel: "noopener" }, "GitHub"));
-    linksWrap.appendChild(document.createTextNode("  ·  "));
-  }
-  if (lab.social?.google_scholar) {
-    linksWrap.appendChild(el("a", { href: lab.social.google_scholar, target: "_blank", rel: "noopener" }, "Google Scholar"));
-  }
-  wrap.appendChild(linksWrap);
-  host.appendChild(wrap);
-
   // Princeton University required footer band: logo, Trustee copyright,
   // Diversity & Non-Discrimination and Accessibility Help links.
   const pu = lab.footer || {};
