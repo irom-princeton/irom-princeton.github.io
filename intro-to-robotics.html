@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Introduction to Robotics | IRoM-Lab</title>
+<link rel="icon" href="assets/img/logos/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" />
+<style>
+  /* Recreation of the archived irom-lab.princeton.edu/intro-to-robotics/ page
+     (Divi theme, "red" color scheme). Self-contained on purpose: this is a
+     one-off legacy course page, not part of the current site's design system. */
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #fff;
+    color: #666;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7em;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: #960000; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 500; line-height: 1.15em; margin: 0; padding-bottom: 10px; }
+  strong, b { font-weight: 700; }
+  em, i { font-style: italic; }
+  p { margin: 0 0 1em; }
+  ul { margin: 0; padding: 0 0 1em 1.2em; }
+  li { margin-bottom: .5em; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  .back-link {
+    display: block;
+    padding: 10px 0 0 24px;
+    font-size: 12px;
+    color: #999;
+  }
+  .back-link:hover { color: #960000; }
+
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 0 64px; }
+
+  /* Hero: the header module's actual background is the drone photo,
+     blended soft-light over a mid-gray fill — not a plain white band. */
+  .hero-frame { background: #f7f7f7; padding-top: 24px; }
+  .course-hero {
+    background-color: #d6d6d6;
+    background-image: url(assets/img/courses/intro-to-robotics-drone-hero.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-blend-mode: soft-light;
+    padding: 155px 0 172px;
+    margin-bottom: -1px;
+  }
+  .course-hero .wrap { max-width: 1080px; }
+  .course-hero h1 {
+    font-size: 44px;
+    font-weight: 800;
+    color: #960000;
+    padding-bottom: 0;
+    text-align: left;
+  }
+  .course-hero .subtitle { font-size: 20px; color: #666; margin: 0; padding-bottom: 0; }
+
+  .course-columns {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+    padding: 50px 0 40px;
+    align-items: start;
+  }
+  .col-main { padding-left: 4px; padding-right: 44px; }
+  .col-main h2 { font-size: 30px; margin-top: 38px; }
+  .col-main h2:first-child { margin-top: 0; }
+  .col-main h4 { font-size: 18px; padding-bottom: 4px; }
+  .col-side video, .col-side img { width: 100%; border-radius: 0; display: block; }
+  .col-side video { background: #000; }
+  .col-side img.drone-banner { margin-top: 50px; }
+  .schematic-img { max-width: 50%; margin: 10px auto 0; }
+  @media (max-width: 860px) {
+    .course-columns { grid-template-columns: 1fr; }
+    .col-side { order: -1; }
+    .col-main { padding-right: 4px; }
+  }
+
+  /* Course materials: a light-gray card only as wide as the text column
+     above it, not a full-bleed band — the right-hand column stays empty,
+     matching the original's two-column row. */
+  .table-row { display: grid; grid-template-columns: 3fr 2fr; padding: 1px 0 60px; }
+  .table-card { background: #f4f4f4; padding: 14px 44px 30px 4px; }
+  .table-card h2 { font-size: 30px; margin-top: 34px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: #555; font-weight: 700; padding: 9px 20px 9px 0; white-space: nowrap; }
+  td { padding: 6px 20px 6px 0; border-top: 1px solid #e2e2e2; vertical-align: top; }
+  @media (max-width: 860px) {
+    .table-row { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 0 24px; }
+    .course-hero { padding: 90px 0 100px; }
+    .course-hero h1 { font-size: 34px; }
+  }
+</style>
+</head>
+<body>
+  <a class="back-link" href="index.html">&larr; IRoM Lab</a>
+
+  <div class="hero-frame">
+    <header class="course-hero">
+      <div class="wrap">
+        <h1>Introduction to Robotics</h1>
+        <p class="subtitle">Princeton University</p>
+        <p class="subtitle">MAE / ECE 345, COS 346, MAE 549</p>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="wrap course-columns">
+      <div class="col-main">
+        <h2>Course description</h2>
+        <p>Robotics is a rapidly growing field with applications including unmanned aerial vehicles, autonomous cars, and robotic manipulators. This course will provide an introduction to the fundamental theoretical and algorithmic principles behind robotic systems. The course will also allow students to get hands-on experience through project-based assignments with the <a href="https://www.bitcraze.io/products/crazyflie-2-1/" target="_blank" rel="noopener">Crazyflie quadrotor</a>. Topics include:</p>
+        <ul>
+          <li>Feedback Control</li>
+          <li>Motion Planning</li>
+          <li>State estimation, localization, and mapping</li>
+          <li>Computer vision and learning</li>
+          <li>Broader topics: Robotics and the law, ethics, and economics</li>
+        </ul>
+        <p>This course is aimed at undergraduate students (primarily juniors and seniors). The graduate-level track (MAE 549) is aimed at first-year PhD students.</p>
+        <p><strong>Note:</strong> this course website is the public-facing version; Princeton students enrolled in the course should use <a href="https://canvas.princeton.edu/" target="_blank" rel="noopener">Canvas</a>. This website provides access to course materials including lecture videos, notes, slides, assignments, and the final project (see below).</p>
+
+        <h2>Instructor</h2>
+        <h4><a href="majumdar.html">Anirudha Majumdar</a></h4>
+        <p>Mechanical &amp; Aerospace Engineering, Princeton University</p>
+
+        <h2>Acknowledgements</h2>
+        <p>The following teaching staff have contributed greatly to the development of the materials for this course: Vincent Pacelli, Julienne LaChance, Jon Prevost, Alec Farid, Meghan Booker, Lena Rosendahl, David Snyder, Allen Ren, Eric Lepowsky, Nate Simon, Alexandra Bodrova, An-Ya Olson, Haoyuan Cai, Dylan Tran, Jiayi Geng, and Alkin Kaz.</p>
+        <p>Lecture recordings were done by Geovanni Valdivieso <a href="https://web.archive.org/web/20231201233505/https://iss.princeton.edu/videoproduction" target="_blank" rel="noopener">(Princeton Broadcast Center)</a>.</p>
+
+        <h2>Reference textbooks</h2>
+        <ul>
+          <li>Steven M. LaValle, <em>Planning Algorithms</em>.</li>
+          <li>Sebastian Thrun, Wolfram Burgard, and Dieter Fox, <em>Probabilistic Robotics</em>.</li>
+          <li>Mark W. Spong, Seth Hutchinson, and M. Vidyasagar, <em>Robot Dynamics and Control</em>.</li>
+          <li>Illah R. Nourbaksh and Roland Siegwart, <em>Introduction to Autonomous Mobile Robots</em>.</li>
+        </ul>
+
+        <h2>Course prerequisites</h2>
+        <p>Multivariable calculus, linear algebra, basic probability, basic differential equations, some programming experience (this course uses Python).</p>
+
+        <h2>Hardware</h2>
+        <p>The assignments for the course (provided below) include theory, programming, and hardware implementation components. For the hardware, we use the <a href="https://www.bitcraze.io/products/crazyflie-2-1/" target="_blank" rel="noopener">Crazyflie</a> drone from <a href="https://www.bitcraze.io/" target="_blank" rel="noopener">Bitcraze</a>. This is a lightweight drone (27g) with open-source software. The feedback control and motion planning hardware assignments can be completed with the following parts list:</p>
+        <ul>
+          <li><a href="https://store.bitcraze.io/collections/kits/products/crazyflie-2-1" target="_blank" rel="noopener">Crazyflie 2.1 drone</a></li>
+          <li><a href="https://store.bitcraze.io/collections/decks/products/flow-deck-v2" target="_blank" rel="noopener">Flow deck v2</a></li>
+          <li><a href="https://store.bitcraze.io/collections/kits/products/crazyradio-pa" target="_blank" rel="noopener">Crazyflie PA radio</a></li>
+          <li><a href="https://store.bitcraze.io/collections/bundles/products/spare-part-bundle" target="_blank" rel="noopener">Spare parts</a> (if necessary)</li>
+        </ul>
+        <p>For the final project, students program the drones to perform vision-based navigation. We attach cameras to the drones, which transmit images in real-time to a receiver unit plugged into to a laptop. Completing the final project requires the following additional parts:</p>
+        <ul>
+          <li><a href="https://www.amazon.com/Wolfwhoop-WT05-Transmitter-Antenna-Quadcopter/dp/B06XJMQQ6Y/" target="_blank" rel="noopener">WT05 micro camera</a></li>
+          <li><a href="https://www.amazon.com/Skydroid-Antenna-Control-Receiver-Smartphone/dp/B08RN4W83J/" target="_blank" rel="noopener">Skydroid receiver</a></li>
+          <li><a href="https://store.bitcraze.io/collections/spare-parts-crazyflie-2-0/products/male-long-deck-connector" target="_blank" rel="noopener">Long pins</a></li>
+        </ul>
+        <p>We use a simple PCB for powering the WT05 analog camera. Below is the schematic, and <a href="https://drive.google.com/file/d/1x22HPuPrM670an4st2ZQn0Yl8OhDu6c0/view?usp=sharing" target="_blank" rel="noopener">this is the .brd file.</a></p>
+        <img class="schematic-img" src="assets/img/courses/intro-to-robotics-pcb-schematic.png" alt="PCB schematic for powering the WT05 analog camera" />
+      </div>
+
+      <div class="col-side">
+        <video controls preload="metadata">
+          <source src="assets/video/courses/intro-to-robotics-final-project.mp4" type="video/mp4" />
+        </video>
+        <img class="drone-banner" src="assets/img/courses/intro-to-robotics-drone.jpg" alt="Crazyflie drone used in course assignments" />
+      </div>
+    </div>
+
+    <div class="wrap table-row">
+      <div class="table-card">
+        <h2>Course materials</h2>
+        <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Lecture videos</th><th>Materials</th><th>Assignments</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://youtu.be/e4jow5O3JT8" target="_blank" rel="noopener">Lecture 1: Intro to Robotics</a></td>
+              <td><a href="https://www.dropbox.com/s/2pbzabn0b0lghnb/Lecture1.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr><td><strong>Feedback Control</strong></td><td></td><td></td></tr>
+            <tr>
+              <td><a href="https://youtu.be/s_ZBiaja9q8" target="_blank" rel="noopener">Lecture 2: Dynamics of planar quadrotor</a></td>
+              <td><a href="https://www.dropbox.com/s/i21tmhjn2lgql60/Lecture2_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a> <a href="https://www.dropbox.com/s/4wrodxx1g5vcvip/Lecture2_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/-iU5eyFiJcI" target="_blank" rel="noopener">Lecture 3: 3D quadrotor dynamics and feedback</a></td>
+              <td><a href="https://www.dropbox.com/s/tgr6fev8q9ha2gm/Lecture3.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td><a href="https://www.dropbox.com/s/v5tpn69d21vsqdx/Assignment1.pdf?dl=0" target="_blank" rel="noopener">Assignment 1</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/XQolfBt8e4s" target="_blank" rel="noopener">Lecture 4: Asymptotic stability and PD control</a></td>
+              <td><a href="https://www.dropbox.com/s/jdb2j86z7i3wi5g/Lecture4.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/_UYsNIPqqxc" target="_blank" rel="noopener">Lecture 5: Linear Quadratic Regulator (LQR)</a></td>
+              <td><a href="https://www.dropbox.com/s/33ma449sfrbxxwz/Lecture5_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a> <a href="https://www.dropbox.com/s/q5g6brdyxyntwmz/Lecture5_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td><a href="https://www.dropbox.com/s/1ru377su6dqp8xj/Assignment2.pdf?dl=0" target="_blank" rel="noopener">Assignment 2</a></td>
+            </tr>
+            <tr><td><strong>Motion Planning</strong></td><td></td><td></td></tr>
+            <tr>
+              <td><a href="https://youtu.be/Gr1Bn86AH4Y" target="_blank" rel="noopener">Lecture 6: Discrete planning (BFS and DFS)</a></td>
+              <td><a href="https://www.dropbox.com/s/eug1kmhc6gvhl2d/Lecture6.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/4ZbHHpKpEJQ" target="_blank" rel="noopener">Lecture 7: Optimal discrete planning (Dijkstra and A*)</a></td>
+              <td><a href="https://www.dropbox.com/s/4pdtj66zih0syf8/Lecture7_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/pn3ju9lxki6873r/Lecture7_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td><a href="https://www.dropbox.com/s/u5blcweacz9y8wm/Assignment3.pdf?dl=0" target="_blank" rel="noopener">Assignment 3</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/S6C--60z140" target="_blank" rel="noopener">Lecture 8: Randomized motion planning (RRTs)</a></td>
+              <td><a href="https://www.dropbox.com/s/qvepr2ce03iykkc/Lecture8_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/yeb2cyx6irockse/Lecture8_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/ohBJ0BCtZWQ" target="_blank" rel="noopener">Lecture 9: Differential flatness</a></td>
+              <td><a href="https://www.dropbox.com/s/wie83r073xpw0m4/Lecture9_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/hakztagzfhjgh6z/Lecture9_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td><a href="https://www.dropbox.com/s/98sq4mwbhrh2f5o/Assignment4.pdf?dl=0" target="_blank" rel="noopener">Assignment 4</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/AEIBav9p0e0" target="_blank" rel="noopener">Lecture 10: Planning with dynamics constraints</a></td>
+              <td><a href="https://www.dropbox.com/s/ysx55ze2hozf0xd/Lecture10_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/g3z23fyfsbtkrlg/Lecture10_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr><td><strong>State estimation, localization, and mapping</strong></td><td></td><td></td></tr>
+            <tr>
+              <td><a href="https://youtu.be/tv_xoBMawPg" target="_blank" rel="noopener">Lecture 11: Nondeterministic filter</a></td>
+              <td><a href="https://www.dropbox.com/s/2lkldm0wnw5uwz9/Lecture11_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/ukzdgfz5fi1jadm/Lecture11_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td><a href="https://github.com/Princeton-Introduction-to-Robotics/F2022/blob/main/Lab5.ipynb" target="_blank" rel="noopener">Assignment 5</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/L8UPjbhQ0PA" target="_blank" rel="noopener">Lecture 12: Bayes filtering</a></td>
+              <td><a href="https://www.dropbox.com/s/bfro1hl5ae7o9cs/Lecture12.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/RCbXm2q_PK4" target="_blank" rel="noopener">Lecture 13: Kalman filtering and particle filtering</a></td>
+              <td><a href="https://www.dropbox.com/s/a9foq25rmgle48p/Lecture13_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/2n2seaed3n5cpbd/Lecture13_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td><a href="https://www.dropbox.com/s/sjn2x3ycgrzbk2a/Assignment6.pdf?dl=0" target="_blank" rel="noopener">Assignment 6</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/J1Q85bjd7cI" target="_blank" rel="noopener">Lecture 14: Localization</a></td>
+              <td><a href="https://www.dropbox.com/s/ma7arjlcl2t5qnm/Lecture14_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/xfqc8h0fmy8dveq/Lecture14_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/I_Cclr1xh8g" target="_blank" rel="noopener">Lecture 15: Mapping</a></td>
+              <td><a href="https://www.dropbox.com/s/8bqqy0btjiww8vk/Lecture15_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/zx98h4nfgx0kvy9/Lecture15_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td><a href="https://www.dropbox.com/s/yo2ng4kj50cl52m/Assignment7.pdf?dl=0" target="_blank" rel="noopener">Assignment 7</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/qnKL4_a-lFg" target="_blank" rel="noopener">Lecture 16: Simultaneous localization and mapping (SLAM)</a></td>
+              <td><a href="https://www.dropbox.com/s/64s1pw1r0h4oees/Lecture16_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/8is93slzvmeu0v2/Lecture16_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr><td><strong>Vision and learning</strong></td><td></td><td></td></tr>
+            <tr>
+              <td><a href="https://youtu.be/9hLa6yyqItk" target="_blank" rel="noopener">Lecture 17: Intro to vision</a></td>
+              <td><a href="https://www.dropbox.com/s/nfpkngb3ves6iwe/Lecture17.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/cYKIDkBRtpI" target="_blank" rel="noopener">Lecture 18: Optical flow</a></td>
+              <td><a href="https://www.dropbox.com/s/93p55jp900fcisz/Lecture18_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a> <a href="https://www.dropbox.com/s/4okfxydxchywopo/Lecture18_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/vr1z4kZ4GWU" target="_blank" rel="noopener">Lecture 19: Intro to deep learning</a></td>
+              <td><a href="https://www.dropbox.com/s/zwn791ied91roks/Lecture19_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a> <a href="https://www.dropbox.com/s/t6ugtmf2ih2lblk/Lecture19_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/LeRBSykhELk" target="_blank" rel="noopener">Lecture 20: Stochastic gradient descent</a></td>
+              <td><a href="https://www.dropbox.com/s/c9umlgvhjg5wwuz/Lecture20_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td><a href="https://github.com/Princeton-Introduction-to-Robotics/F2022/blob/main/Lab8.ipynb" target="_blank" rel="noopener">Assignment 8</a>, <a href="https://github.com/Princeton-Introduction-to-Robotics/F2022/blob/main/Lab9.ipynb" target="_blank" rel="noopener">Assignment 9</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/8HbRpetTD6k" target="_blank" rel="noopener">Lecture 21: Multi-layer networks, overfitting, regularization</a></td>
+              <td><a href="https://www.dropbox.com/s/hs6k5tirhzkh5pp/Lecture21_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a> <a href="https://www.dropbox.com/s/ua99xuorbz1wme6/Lecture21_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/8KseI_C-BJQ" target="_blank" rel="noopener">Lecture 22: Convolutional networks</a></td>
+              <td><a href="https://www.dropbox.com/s/b63w2v92120hzo7/Lecture22.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/-hRimMuXkCI" target="_blank" rel="noopener">Lecture 23: Reinforcement learning</a></td>
+              <td><a href="https://www.dropbox.com/s/5r5387akuk6858c/Lecture23_slides.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a> <a href="https://www.dropbox.com/s/rf8x5reu2a5rwfb/Lecture23_notes.pdf?dl=0" target="_blank" rel="noopener">[Notes]</a></td>
+              <td><a href="https://github.com/Princeton-Introduction-to-Robotics/F2022/tree/main/FinalProject" target="_blank" rel="noopener">Final project</a></td>
+            </tr>
+            <tr><td><strong>Broader topics in robotics</strong></td><td></td><td></td></tr>
+            <tr>
+              <td><a href="https://youtu.be/y1FoBF1WJDs" target="_blank" rel="noopener">Lecture 24: Robotics and jobs, ethics, and laws</a></td>
+              <td><a href="https://www.dropbox.com/s/twx0t5ps6lvyjql/Lecture24.pdf?dl=0" target="_blank" rel="noopener">[Slides]</a></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

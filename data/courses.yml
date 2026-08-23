@@ -10,7 +10,7 @@
     focus on the algorithms that enable robots to perceive and act in the
     world. Topics include state estimation, motion planning, control, and
     machine learning for robotics.
-  url: "https://irom-lab.princeton.edu/intro-to-robotics/"
+  url: "intro-to-robotics.html"
 
 - title: "Introduction to Engineering Dynamics"
   numbers: ["MAE 206"]
