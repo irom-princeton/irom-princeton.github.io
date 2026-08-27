@@ -124,7 +124,7 @@
     <div class="wrap course-columns">
       <div class="col-main">
         <h2>Course description</h2>
-        <p>Robotics is a rapidly growing field with applications including drones, autonomous vehicles, and home assistants. This course will provide an introduction to the fundamental theoretical and algorithmic principles behind modern robotic systems. The course will also allow students to get hands-on experience through project-based assignments with the <a href="https://www.bitcraze.io/products/crazyflie-2-1/" target="_blank" rel="noopener">Crazyflie quadrotor</a>. Topics include:</p>
+        <p>Robotics is a rapidly growing field with applications including drones, autonomous vehicles, and home assistants. This course will provide an introduction to the fundamental theoretical and algorithmic principles behind modern robotic systems. The course will also allow students to get hands-on experience through project-based assignments with the <a href="https://store.bitcraze.io/products/crazyflie-2-1-brushless" target="_blank" rel="noopener">Crazyflie quadrotor</a>. For the final project, students train a vision-based navigation policy using imitation learning. Course topics include:</p>
         <ul>
           <li>Motion Planning</li>
           <li>Feedback Control</li>
@@ -141,7 +141,7 @@
 
         <h2>Acknowledgements</h2>
         <p>A number of course staff members have contributed greatly to the development of this course over the years. I am particularly grateful to Jon Prevost, Vincent Pacelli, Julienne LaChance, Alec Farid, Meghan Booker, David Snyder, Allen Ren, Eric Lepowsky, Alexandra Bodrova, and Nate Simon.</p>
-        <p>Lecture recordings were done by the <a href="https://web.archive.org/web/20231201233505/https://iss.princeton.edu/videoproduction" target="_blank" rel="noopener">Princeton Broadcast Center</a>.</p>
+        <p>Lecture recordings were done by the <a href="https://avservices.princeton.edu/videoproduction" target="_blank" rel="noopener">Princeton Broadcast Center</a>.</p>
 
         <h2>Reference textbooks</h2>
         <ul>
@@ -154,21 +154,20 @@
         <p>Multivariable calculus, linear algebra, basic probability, basic differential equations, some programming experience (this course uses Python).</p>
 
         <h2>Hardware</h2>
-        <p>The assignments for the course (provided below) include theory, programming, and hardware implementation components. For the hardware, we use the <a href="https://www.bitcraze.io/products/crazyflie-2-1/" target="_blank" rel="noopener">Crazyflie</a> drone from <a href="https://www.bitcraze.io/" target="_blank" rel="noopener">Bitcraze</a>. This is a lightweight drone (27g) with open-source software. The feedback control and motion planning hardware assignments can be completed with the following parts list:</p>
+        <p>The assignments for the course (provided below) include theory, programming, and hardware implementation components. For the hardware, we use the <a href="https://www.bitcraze.io/products/crazyflie-2-1-brushless/" target="_blank" rel="noopener">Crazyflie</a> drone from <a href="https://www.bitcraze.io/" target="_blank" rel="noopener">Bitcraze</a>. This is a lightweight drone with open-source software. The motion planning and feedback control hardware assignments can be completed with the following parts list:</p>
         <ul>
-          <li><a href="https://store.bitcraze.io/collections/kits/products/crazyflie-2-1" target="_blank" rel="noopener">Crazyflie 2.1 drone</a></li>
+          <li><a href="https://store.bitcraze.io/products/crazyflie-2-1-brushless" target="_blank" rel="noopener">Crazyflie 2.1 (brushless) drone</a></li>
           <li><a href="https://store.bitcraze.io/collections/decks/products/flow-deck-v2" target="_blank" rel="noopener">Flow deck v2</a></li>
           <li><a href="https://store.bitcraze.io/collections/kits/products/crazyradio-pa" target="_blank" rel="noopener">Crazyflie PA radio</a></li>
-          <li><a href="https://store.bitcraze.io/collections/bundles/products/spare-part-bundle" target="_blank" rel="noopener">Spare parts</a> (if necessary)</li>
         </ul>
-        <p>For the final project, students program the drones to perform vision-based navigation. We attach cameras to the drones, which transmit images in real-time to a receiver unit plugged into to a laptop. Completing the final project requires the following additional parts:</p>
+        <p>For the final project, students train a vision-based navigation policy using imitation learning. We attach cameras to the drones, which transmit images in real-time to a receiver unit plugged into to a laptop. Completing the final project requires the following additional parts:</p>
         <ul>
-          <li><a href="https://www.amazon.com/Wolfwhoop-WT05-Transmitter-Antenna-Quadcopter/dp/B06XJMQQ6Y/" target="_blank" rel="noopener">WT05 micro camera</a></li>
-          <li><a href="https://www.amazon.com/Skydroid-Antenna-Control-Receiver-Smartphone/dp/B08RN4W83J/" target="_blank" rel="noopener">Skydroid receiver</a></li>
+          <li><a href="https://www.amazon.com/dp/B0C69FFVHH?lv=shuf&channelId=500&plpRedirect=mhFallback" target="_blank" rel="noopener">Digital FPV camera</a></li>
           <li><a href="https://store.bitcraze.io/collections/spare-parts-crazyflie-2-0/products/male-long-deck-connector" target="_blank" rel="noopener">Long pins</a></li>
         </ul>
-        <p>We use a simple PCB for powering the WT05 analog camera. Below is the schematic, and <a href="https://drive.google.com/file/d/1x22HPuPrM670an4st2ZQn0Yl8OhDu6c0/view?usp=sharing" target="_blank" rel="noopener">this is the .brd file.</a></p>
+        <!-- <p>We use a simple PCB for powering the WT05 analog camera. Below is the schematic, and <a href="https://drive.google.com/file/d/1x22HPuPrM670an4st2ZQn0Yl8OhDu6c0/view?usp=sharing" target="_blank" rel="noopener">this is the .brd file.</a></p>
         <img class="schematic-img" src="assets/img/courses/intro-to-robotics-pcb-schematic.png" alt="PCB schematic for powering the WT05 analog camera" />
+       -->
       </div>
 
       <div class="col-side">
@@ -193,54 +192,55 @@
               <td></td>
               <td></td>
             </tr>
-            <tr><td><strong>Feedback Control</strong></td><td></td><td></td></tr>
+            <tr><td><strong>Geometric Motion Planning</strong></td><td></td><td></td></tr>
             <tr>
-              <td>Lecture 2: Dynamics of planar quadrotor</td>
+              <td>Lecture 2: Discrete planning (graph search)</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 3: 3D quadrotor dynamics and feedback</td>
+              <td>Lecture 3: Randomized planning (RRTs)</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr><td><strong>Dynamics and Control</strong></td><td></td><td></td></tr>
+            <tr>
+              <td>Lecture 4: Planar quadrotor dynamics</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 4: Asymptotic stability and PD control</td>
+              <td>Lecture 5: 3D quadrotor dynamics, linearization</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 5: Linear Quadratic Regulator (LQR)</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr><td><strong>Motion Planning</strong></td><td></td><td></td></tr>
-            <tr>
-              <td>Lecture 6: Discrete planning (BFS and DFS)</td>
+              <td>Lecture 6: Fixed points, stability, PD control</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 7: Optimal discrete planning (Dijkstra and A*)</td>
+              <td>Lecture 7: Linear Quadratic Regulator (LQR)</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 8: Randomized motion planning (RRTs)</td>
+            <tr><td><strong>Planning with Dynamics Constraints</strong></td><td></td><td></td></tr>
+              <td>Lecture 8: Differential flatness</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 9: Differential flatness</td>
+              <td>Lecture 9: Trajectory optimization, time-varying feedback</td>
               <td></td>
               <td></td>
             </tr>
+            <tr><td><strong>State Estimation, Localization, Mapping</strong></td><td></td><td></td></tr>
             <tr>
-              <td>Lecture 10: Planning with dynamics constraints</td>
+              <td>Lecture 10: Camera models, optical flow</td>
               <td></td>
               <td></td>
             </tr>
-            <tr><td><strong>State estimation, localization, and mapping</strong></td><td></td><td></td></tr>
             <tr>
               <td>Lecture 11: Nondeterministic filter</td>
               <td></td>
@@ -271,39 +271,39 @@
               <td></td>
               <td></td>
             </tr>
-            <tr><td><strong>Vision and learning</strong></td><td></td><td></td></tr>
+            <tr><td><strong>Machine Learning for Robotics</strong></td><td></td><td></td></tr>
             <tr>
-              <td>Lecture 17: Intro to vision</td>
+              <td>Lecture 17: Imitation learning</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 18: Optical flow</td>
+              <td>Lecture 18: Generative architectures (flow matching, diffusion)</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 19: Intro to deep learning</td>
+              <td>Lecture 19: Data augmentation and DAgger</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 20: Stochastic gradient descent</td>
+              <td>Lecture 20: Vision-language-action models (VLAs)</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 21: Multi-layer networks, overfitting, regularization</td>
+              <td>Lecture 21: TBD</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 22: Convolutional networks</td>
+              <td>Lecture 22: Reinforcement learning</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Lecture 23: Reinforcement learning</td>
+              <td>Lecture 23: World models</td>
               <td></td>
               <td></td>
             </tr>
