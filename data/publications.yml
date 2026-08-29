@@ -322,7 +322,7 @@
   authors: ["Nathaniel Simon"]
   venue: "Ph.D. Thesis, Princeton University"
   year: 2025
-  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/07/Simon_princeton_0181D_15442-1.pdf" }
+  links: { pdf: "https://dataspace.princeton.edu/handle/88435/dsp01jh343w72r" }
 
 - id: thesis_ren
   type: thesis
@@ -331,7 +331,7 @@
   authors: ["Allen Z. Ren"]
   venue: "Ph.D. Thesis, Princeton University"
   year: 2025
-  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Ren_princeton_thesis.pdf" }
+  links: { pdf: "https://dataspace.princeton.edu/handle/88435/dsp01gt54kr45d" }
 
 - id: perceive_confidence
   title: "Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception"
@@ -417,7 +417,7 @@
   authors: ["Meghan Booker"]
   venue: "Ph.D. Thesis, Princeton University"
   year: 2024
-  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Booker_princeton_0181D_14988.pdf" }
+  links: { pdf: "assets/pdf/theses/booker-thesis.pdf" }
 
 - id: pac_bayes_icp
   title: "PAC-Bayes Generalization Certificates for Learned Inductive Conformal Prediction"
@@ -515,7 +515,7 @@
   authors: ["Vincent Pacelli"]
   venue: "Ph.D. Thesis, Princeton University"
   year: 2023
-  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2023/06/Pacelli_Thesis_Full.pdf" }
+  links: { pdf: "assets/pdf/theses/pacelli-thesis.pdf" }
 
 - id: thesis_farid
   type: thesis
@@ -524,7 +524,7 @@
   authors: ["Alec Farid"]
   venue: "Ph.D. Thesis, Princeton University"
   year: 2023
-  links: { pdf: "https://irom-lab.princeton.edu/wp-content/uploads/2023/02/Thesis_Farid.pdf" }
+  links: { pdf: "assets/pdf/theses/farid-thesis.pdf" }
 
 - id: atla
   title: "Leveraging Language for Accelerated Learning of Tool Manipulation"

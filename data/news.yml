@@ -5,11 +5,13 @@
 # Text mirrors irom-lab.princeton.edu/ as of 2026-05.
 # ─────────────────────────────────────────────────────────────
 
+# Photo of the celebration (justin_fpo.png) was lost in the domain transfer
+# and isn't in any web archive. Re-link as [text](url) in `body` if a copy turns up.
 - date: "2026-04"
   body: |
     🎓 Congratulations to **Dr. Justin Lidard** for his successful PhD thesis defense:
     *Robot Learning For and From Humans: Scalable Algorithms and Safety Assurances*!
-    [Click here for a photo of the celebration!](https://irom-lab.princeton.edu/wp-content/uploads/2026/05/justin_fpo.png)
+
 
 - date: "2026-03"
   body: |
@@ -57,27 +59,32 @@
     - A. Majumdar, M. Sharma, et. al., *[Predictive Red Teaming: Breaking Policies Without Breaking Robots](https://arxiv.org/pdf/2502.06575)*
     - O. Shorinwa, J. Sun, et. al., *[SIREN: Semantic, Initialization-Free Registration of Multi-Robot Gaussian Splatting Maps](https://arxiv.org/pdf/2502.06519)*
 
+# Farewell brunch photo (IMG_4782-min-scaled.jpg) was lost in the domain transfer
+# and isn't in any web archive. Re-link as [text](url) in `body` if a copy turns up.
 - date: "2025-07"
   body: |
     🎓 Congratulations to **Dr. David Snyder** for his successful PhD thesis defense:
     *Nonasymptotic Methods for Guaranteed Robotic Policy Synthesis and Evaluation*!
-    [Click here to see a photo of the farewell brunch.](https://irom-lab.princeton.edu/wp-content/uploads/2025/08/IMG_4782-min-scaled.jpg)
 
+# Photos of the celebration and farewell brunch (NateFPO.jpg, IMG_4483-min.png)
+# were lost in the domain transfer and aren't in any web archive.
+# Re-link as [text](url) in `body` if a copy turns up.
 - date: "2025-05"
   body: |
     🎓 Congratulations to **Dr. Nathaniel Simon** for his successful PhD thesis defense:
-    *[Learned Perception Modules for Autonomous Aerial Vehicle Navigation and Control](https://irom-lab.princeton.edu/wp-content/uploads/2025/07/Simon_princeton_0181D_15442-1.pdf)*!
-    See the [photo of the celebration](https://irom-lab.princeton.edu/wp-content/uploads/2025/06/NateFPO.jpg) and [farewell brunch](https://irom-lab.princeton.edu/wp-content/uploads/2025/06/IMG_4483-min.png)!
+    *[Learned Perception Modules for Autonomous Aerial Vehicle Navigation and Control](https://dataspace.princeton.edu/handle/88435/dsp01jh343w72r)*!
 
 - date: "2025-02"
   body: |
-    [Photo from our farewell brunch for Allen.](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/IMG_4263-1.png) We're wishing you the best of luck on your next adventure!
+    [Photo from our farewell brunch for Allen.](assets/img/news/allen-ren-farewell-brunch-2025-02.jpg) We're wishing you the best of luck on your next adventure!
 
+# Photo of the celebration (IMG_5102-scaled.jpg) was lost in the domain transfer
+# and isn't in any web archive. Re-link as [text](url) in `body` if a copy turns up.
 - date: "2025-02"
   body: |
     🎓 Congratulations to **Dr. Zhiyi "Allen" Ren** for his successful PhD thesis defense:
-    *[Towards Robust and Provably Generalizable Robot Learning](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Ren_princeton_thesis.pdf)*!
-    See the [video](https://youtu.be/OmzgBnjpaqc) and a [photo of the celebration](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/IMG_5102-scaled.jpg)!
+    *[Towards Robust and Provably Generalizable Robot Learning](https://dataspace.princeton.edu/handle/88435/dsp01gt54kr45d)*!
+    See the [video](https://youtu.be/OmzgBnjpaqc) of the celebration!
 
 - date: "2025-02"
   body: |
@@ -112,7 +119,7 @@
 - date: "2024-05"
   body: |
     🎓 Congratulations to **Dr. Meghan Booker** for her successful PhD thesis defense:
-    *[Task-Driven Perception and Control for Robust and Efficient Autonomy](https://irom-lab.princeton.edu/wp-content/uploads/2025/02/Booker_princeton_0181D_14988.pdf)*!
+    *[Task-Driven Perception and Control for Robust and Efficient Autonomy](assets/pdf/theses/booker-thesis.pdf)*!
 
 - date: "2024-04"
   body: |
@@ -188,11 +195,11 @@
 
 - date: "2023-07"
   body: |
-    🏆 Congrats to **Nate Simon, Sasha Bodrova, and An-Ya Olson** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](http://irom-lab.princeton.edu/intro-to-robotics)!
+    🏆 Congrats to **Nate Simon, Sasha Bodrova, and An-Ya Olson** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](intro-to-robotics.html)!
 
 - date: "2023-05"
   body: |
-    🎓 Congratulations to **Dr. Vincent Pacelli** for his successful PhD thesis defense: *[Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots](https://irom-lab.princeton.edu/wp-content/uploads/2023/06/Pacelli_Thesis_Full.pdf)*!
+    🎓 Congratulations to **Dr. Vincent Pacelli** for his successful PhD thesis defense: *[Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots](assets/pdf/theses/pacelli-thesis.pdf)*!
 
 - date: "2023-05"
   body: |
@@ -224,7 +231,7 @@
 
 - date: "2023-01"
   body: |
-    🎓 Congratulations to **Dr. Alec Farid** for his successful PhD thesis defense: *[Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory](https://irom-lab.princeton.edu/wp-content/uploads/2023/02/Thesis_Farid.pdf)*! See the [video](https://youtu.be/1UZWZQkQ2e4).
+    🎓 Congratulations to **Dr. Alec Farid** for his successful PhD thesis defense: *[Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory](assets/pdf/theses/farid-thesis.pdf)*! See the [video](https://youtu.be/1UZWZQkQ2e4).
 
 - date: "2022-12"
   body: |
@@ -268,7 +275,7 @@
 
 - date: "2022-06"
   body: |
-    🏆 Congrats to **David Snyder and Allen Ren** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](http://irom-lab.princeton.edu/intro-to-robotics)!
+    🏆 Congrats to **David Snyder and Allen Ren** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](intro-to-robotics.html)!
 
 - date: "2022-06"
   body: |
