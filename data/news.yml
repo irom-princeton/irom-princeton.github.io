@@ -76,7 +76,7 @@
 
 - date: "2025-02"
   body: |
-    [Photo from our farewell brunch for Allen.](assets/img/news/allen-ren-farewell-brunch-2025-02.jpg) We're wishing you the best of luck on your next adventure!
+    [Photo from our farewell brunch for Allen.](/assets/img/news/allen-ren-farewell-brunch-2025-02.jpg) We're wishing you the best of luck on your next adventure!
 
 # Photo of the celebration (IMG_5102-scaled.jpg) was lost in the domain transfer
 # and isn't in any web archive. Re-link as [text](url) in `body` if a copy turns up.
@@ -119,7 +119,7 @@
 - date: "2024-05"
   body: |
     🎓 Congratulations to **Dr. Meghan Booker** for her successful PhD thesis defense:
-    *[Task-Driven Perception and Control for Robust and Efficient Autonomy](assets/pdf/theses/booker-thesis.pdf)*!
+    *[Task-Driven Perception and Control for Robust and Efficient Autonomy](/assets/pdf/theses/booker-thesis.pdf)*!
 
 - date: "2024-04"
   body: |
@@ -195,11 +195,11 @@
 
 - date: "2023-07"
   body: |
-    🏆 Congrats to **Nate Simon, Sasha Bodrova, and An-Ya Olson** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](intro-to-robotics.html)!
+    🏆 Congrats to **Nate Simon, Sasha Bodrova, and An-Ya Olson** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](/intro-to-robotics/)!
 
 - date: "2023-05"
   body: |
-    🎓 Congratulations to **Dr. Vincent Pacelli** for his successful PhD thesis defense: *[Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots](assets/pdf/theses/pacelli-thesis.pdf)*!
+    🎓 Congratulations to **Dr. Vincent Pacelli** for his successful PhD thesis defense: *[Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots](/assets/pdf/theses/pacelli-thesis.pdf)*!
 
 - date: "2023-05"
   body: |
@@ -231,7 +231,7 @@
 
 - date: "2023-01"
   body: |
-    🎓 Congratulations to **Dr. Alec Farid** for his successful PhD thesis defense: *[Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory](assets/pdf/theses/farid-thesis.pdf)*! See the [video](https://youtu.be/1UZWZQkQ2e4).
+    🎓 Congratulations to **Dr. Alec Farid** for his successful PhD thesis defense: *[Provably Safe Learning-Based Robot Control via Anomaly Detection and Generalization Theory](/assets/pdf/theses/farid-thesis.pdf)*! See the [video](https://youtu.be/1UZWZQkQ2e4).
 
 - date: "2022-12"
   body: |
@@ -275,7 +275,7 @@
 
 - date: "2022-06"
   body: |
-    🏆 Congrats to **David Snyder and Allen Ren** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](intro-to-robotics.html)!
+    🏆 Congrats to **David Snyder and Allen Ren** for receiving the Crocco Award for Teaching Excellence for [MAE 345/549: Introduction to Robotics](/intro-to-robotics/)!
 
 - date: "2022-06"
   body: |

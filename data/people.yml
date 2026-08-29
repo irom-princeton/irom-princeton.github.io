@@ -11,15 +11,15 @@ pi:
   affiliations:
     - "Mechanical and Aerospace Engineering"
     - "Associated Faculty, Computer Science"
-  photo: "assets/img/people/majumdar_anirudha.jpg"
-  website: "majumdar.html"
+  photo: "/assets/img/people/majumdar_anirudha.jpg"
+  website: "/majumdar/"
   email: "ani.majumdar [at] princeton.edu"
 
 postdocs:
   - name: "Apurva Badithela"
     role: "Postdoctoral Researcher"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/badithela_apurva.png"
+    photo: "/assets/img/people/badithela_apurva.png"
     website: "https://abadithela.github.io/"
   - name: "Ola Sho"
     role: "Postdoctoral Researcher"
@@ -29,39 +29,39 @@ postdocs:
 phd_students:
   - name: "Zhiting (May) Mei"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/mei_zhiting.jpg"
+    photo: "/assets/img/people/mei_zhiting.jpg"
     website: "https://may0mei.github.io/"
   - name: "Asher Hancock"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/hancock_asher.jpg"
+    photo: "/assets/img/people/hancock_asher.jpg"
     website: "https://aasherh.github.io/"
   - name: "Tenny Yin"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/yin_tenny.jpg"
+    photo: "/assets/img/people/yin_tenny.jpg"
     website: "https://tenny-yinyijun.github.io/"
   - name: "Lihan Zha"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/zha_lihan.jpg"
+    photo: "/assets/img/people/zha_lihan.jpg"
     website: "https://lihzha.github.io/"
   - name: "Catherine Zheng"
     department: "Mechanical and Aerospace Engineering"
-    photo: "assets/img/people/zheng_catherine.jpg"
+    photo: "/assets/img/people/zheng_catherine.jpg"
   - name: "Kechen Liu"
     department: "Computer Science"
-    photo: "assets/img/people/liu_kechen.png"
+    photo: "/assets/img/people/liu_kechen.png"
   - name: "Yanbo Xu"
     department: "Computer Science"
-    photo: "assets/img/people/xu_yanbo.jpg"
+    photo: "/assets/img/people/xu_yanbo.jpg"
     website: "https://www.yanboxu.com/"
 
 undergrads:
-  - { name: "Miyu Yamane",   department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/yamane_miyu.jpg" }
-  - { name: "Jeremy Bao",    department: "Operations Research & Financial Engineering",   photo: "assets/img/people/bao_jeremy.png" }
-  - { name: "David Wang",    department: "Electrical and Computer Engineering",           photo: "assets/img/people/wang_david.jpeg" }
-  - { name: "Michael Zhang", department: "Mathematics",                                   photo: "assets/img/people/zhang_michael.jpg" }
-  - { name: "Micah Baker",   department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/baker_micah.jpg" }
-  - { name: "Jade Sceats",   department: "Electrical and Computer Engineering",           photo: "assets/img/people/sceats_jade.jpg" }
-  - { name: "Julian Mendes", department: "Mechanical and Aerospace Engineering",          photo: "assets/img/people/mendes_julian.jpg" }
+  - { name: "Miyu Yamane",   department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/yamane_miyu.jpg" }
+  - { name: "Jeremy Bao",    department: "Operations Research & Financial Engineering",   photo: "/assets/img/people/bao_jeremy.png" }
+  - { name: "David Wang",    department: "Electrical and Computer Engineering",           photo: "/assets/img/people/wang_david.jpeg" }
+  - { name: "Michael Zhang", department: "Mathematics",                                   photo: "/assets/img/people/zhang_michael.jpg" }
+  - { name: "Micah Baker",   department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/baker_micah.jpg" }
+  - { name: "Jade Sceats",   department: "Electrical and Computer Engineering",           photo: "/assets/img/people/sceats_jade.jpg" }
+  - { name: "Julian Mendes", department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/mendes_julian.jpg" }
 
 alumni:
   phd:
