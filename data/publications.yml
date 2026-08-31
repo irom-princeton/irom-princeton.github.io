@@ -12,6 +12,16 @@
 #                         Defaults to "conference".
 # ─────────────────────────────────────────────────────────────
 
+- id: gemini_robotics_2
+  type: tech_report
+  title: "Gemini Robotics 2: Safety Evaluations"
+  thumbnail: "/assets/img/publications/gemini_robotics_safety.jpg"
+  authors: ["Gemini Robotics Team", "Google DeepMind"]
+  venue: "Google DeepMind Technical Report"
+  year: 2026
+  links:
+    arxiv: "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf"
+    project: "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
 
 - id: beyond_binary
   title: "Beyond Binary Success: Sample-Efficient and Statistically Rigorous Robot Policy Comparison"
