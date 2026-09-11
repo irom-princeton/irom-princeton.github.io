@@ -14,26 +14,26 @@ pi:
   institution: "Princeton University"
   email: "ani.majumdar [at] princeton.edu"
   office: "EQuad D202-B"
-  website: "majumdar.html"
+  website: "/majumdar/"
 
 institution:
   name: "Princeton University"
   department: "Mechanical and Aerospace Engineering"
   address: "Engineering Quadrangle, Princeton, NJ 08544"
 
-logo: "assets/img/logos/irom_lab_logo_transparent.png"
-hero_image: "assets/img/lab/lab.jpg"
+logo: "/assets/img/logos/irom_lab_logo_transparent.png"
+hero_image: "/assets/img/lab/lab.jpg"
 
 nav:
-  - { label: "Home",         href: "index.html" }
-  - { label: "Research",     href: "research.html" }
-  - { label: "Publications", href: "publications.html" }
-  - { label: "People",       href: "people.html" }
-  - { label: "Software",     href: "software.html" }
-  - { label: "Teaching",     href: "teaching.html" }
-  - { label: "Press",        href: "press.html" }
-  - { label: "Facilities",   href: "facilities.html" }
-  - { label: "Join us",      href: "join.html" }
+  - { label: "Home",         href: "/" }
+  - { label: "Research",     href: "/research/" }
+  - { label: "Publications", href: "/publications/" }
+  - { label: "People",       href: "/people/" }
+  - { label: "Software",     href: "/software/" }
+  - { label: "Teaching",     href: "/teaching/" }
+  - { label: "Press",        href: "/press/" }
+  - { label: "Facilities",   href: "/facilities/" }
+  - { label: "Join us",      href: "/join/" }
 
 social:
   github: "https://github.com/irom-princeton"
@@ -41,7 +41,7 @@ social:
 
 footer:
   copyright_holder: "Intelligent Robot Motion Lab, Princeton University"
-  princeton_logo: "assets/img/logos/princeton-logo-white.svg"
+  princeton_logo: "/assets/img/logos/princeton-logo-white.svg"
   princeton_url: "https://www.princeton.edu"
   diversity_url: "https://inclusive.princeton.edu/about/our-commitment-equal-opportunity-and-non-discrimination"
   accessibility_url: "https://accessibility.princeton.edu/resources/accessibility-help"

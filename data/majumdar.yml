@@ -1,11 +1,11 @@
 # ─────────────────────────────────────────────────────────────
-# Anirudha Majumdar's personal profile page (majumdar.html).
+# Anirudha Majumdar's personal profile page (/majumdar/).
 # Content mirrors https://irom-lab.princeton.edu/majumdar/ exactly;
 # only visual styling differs. Self-referential "lab webpage" links
 # point at this site's own index.html rather than the old domain.
 # ─────────────────────────────────────────────────────────────
 name: "Anirudha Majumdar"
-photo: "assets/img/people/majumdar_anirudha.jpg"
+photo: "/assets/img/people/majumdar_anirudha.jpg"
 
 positions:
   - "*Associate Professor,* [Mechanical and Aerospace Engineering](https://mae.princeton.edu/)"
@@ -19,7 +19,7 @@ contact:
   office: "EQuad D202-B"
 
 links:
-  lab: "index.html"
+  lab: "/"
   twitter: "https://twitter.com/Majumdar_Ani"
   youtube: "https://www.youtube.com/channel/UCO5b_xm_7rynezQ4aN8SRUg"
 
@@ -29,7 +29,7 @@ research_interests: |
   techniques to improve generalist capabilities, ensure safety and
   alignment with human values and preferences, and evaluate large-scale
   robot policies via simulation and hardware-based testing and red
-  teaming. Please see our [lab webpage](index.html) for more information.
+  teaming. Please see our [lab webpage](/) for more information.
 
 bio: |
   Anirudha Majumdar is an Associate Professor at Princeton University in

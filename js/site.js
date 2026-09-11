@@ -13,7 +13,7 @@ const DATA_FILES = [
 
 async function loadOne(name) {
   try {
-    const res = await fetch(`data/${name}.yml`);
+    const res = await fetch(`/data/${name}.yml`);
     if (!res.ok) throw new Error(`Failed to load data/${name}.yml`);
     const text = await res.text();
     DATA[name] = jsyaml.load(text);
@@ -138,11 +138,11 @@ function renderHeader(activePage) {
   const inner = el("div", { class: "site-header__inner" });
   const brand = el("a", {
     class: "site-header__brand",
-    href: "index.html",
+    href: "/",
     "aria-label": lab.short_name || lab.name
   });
   brand.appendChild(el("img", {
-    src: "assets/img/logos/irom_lab_logo_transparent.png",
+    src: "/assets/img/logos/irom_lab_logo_transparent.png",
     alt: lab.short_name || lab.name
   }));
   inner.appendChild(brand);
@@ -360,7 +360,7 @@ function renderResearch() {
       sec.appendChild(el("h3", { class: "research-area__sub" }, "Representative publications"));
       pubs.forEach(p => sec.appendChild(renderPubCard(p, { compact: true })));
       sec.appendChild(el("p", { class: "research-area__more" },
-        el("a", { href: "publications.html" }, "See all publications →")));
+        el("a", { href: "/publications/" }, "See all publications →")));
     }
     host.appendChild(sec);
   });
@@ -915,7 +915,7 @@ async function boot() {
   // that wait was what made the logo/nav visibly pop in late on every
   // navigation, even though the header only depends on lab.yml.
   const headerReady = loadOne("lab").then(() => {
-    renderHeader(page ? `${page}.html` : "index.html");
+    renderHeader(page && page !== "index" ? `/${page}/` : "/");
   });
   const restReady = Promise.all(
     DATA_FILES.filter(name => name !== "lab").map(loadOne)
