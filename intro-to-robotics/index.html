@@ -86,16 +86,39 @@
     .col-main { padding-right: 4px; }
   }
 
-  /* Course materials: a light-gray card only as wide as the text column
-     above it, not a full-bleed band — the right-hand column stays empty,
-     matching the original's two-column row. */
-  .table-row { display: grid; grid-template-columns: 3fr 2fr; padding: 1px 0 60px; }
-  .table-card { background: #f4f4f4; padding: 14px 44px 30px 28px; }
+  /* Course materials: a light-gray card sized to fit its content (not the
+     full wrap width), just wide enough that cells like "Assignment 1"
+     stay on one line. */
+  .table-row { display: grid; grid-template-columns: 1fr; padding: 1px 0 60px; }
+  .table-card { background: #f4f4f4; padding: 14px 44px 30px 28px; width: fit-content; max-width: 100%; }
   .table-card h2 { font-size: 30px; margin-top: 34px; }
   .table-wrap { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table { width: auto; border-collapse: collapse; font-size: 14px; }
   th { text-align: left; color: #555; font-weight: 700; padding: 9px 20px 9px 0; white-space: nowrap; }
-  td { padding: 6px 20px 6px 0; border-top: 1px solid #e2e2e2; vertical-align: top; }
+  td { padding: 8px 20px 8px 0; border-top: 1px solid #e2e2e2; vertical-align: top; }
+
+  /* Section-header rows (e.g. "Feedback Control") get a tinted band and
+     small-caps label instead of reading like just another lecture row. */
+  tbody tr:has(> td > strong) td {
+    background: #eaeaea;
+    border-top: 1px solid #d9d9d9;
+  }
+  tbody tr:has(> td > strong) td:first-child strong {
+    display: block;
+    padding: 3px 0;
+    color: #960000;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  /* Blank Video/Materials/Assignments cells get a faint placeholder
+     instead of looking broken or unfinished. */
+  tbody tr:not(:has(> td > strong)) td:empty::before {
+    content: "–";
+    color: #ccc;
+  }
+
   @media (max-width: 860px) {
     .table-row { grid-template-columns: 1fr; }
   }
