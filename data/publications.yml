@@ -12,6 +12,17 @@
 #                         Defaults to "conference".
 # ─────────────────────────────────────────────────────────────
 
+- id: rethinking_safety
+  status: "Under Review"
+  type: preprint
+  title: "Rethinking Safety for Generalist Robots"
+  thumbnail: "/assets/img/publications/rethinking_safety.png"
+  authors: ["Rohan Sinha", "Anushri Dixit", "Ran Tian", "Anirudha Majumdar", "Andrea Bajcsy"]
+  venue: "Preprint"
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2609.06326v1"
+
 - id: gemini_robotics_2
   type: tech_report
   title: "Gemini Robotics 2: Safety Evaluations"
