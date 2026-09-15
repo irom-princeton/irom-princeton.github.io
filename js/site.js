@@ -207,9 +207,9 @@ function renderFooter() {
 /* ─── Publication renderer ─── */
 
 function pubLinkButtons(links = {}) {
-  const order = ["arxiv","pdf","project","code","video","blog","journal","demo"];
+  const order = ["arxiv","pdf","project","code","dataset","video","blog","journal","demo"];
   const labels = {
-    arxiv:"arXiv", pdf:"PDF", project:"Project", code:"Code",
+    arxiv:"arXiv", pdf:"PDF", project:"Project", code:"Code", dataset:"Dataset",
     video:"Video", blog:"Blog", journal:"Journal", demo:"Demo"
   };
   return order.filter(k => links[k]).map(k =>

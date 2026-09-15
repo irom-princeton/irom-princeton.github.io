@@ -725,10 +725,10 @@ section + section { margin-top: 64px; }
   background: #8a8a8a; color: #fff; border-color: #8a8a8a;
 }
 .btn--video:hover { background: #6a6a6a; border-color: #6a6a6a; color: #fff; }
-.btn--blog, .btn--journal, .btn--demo, .btn--pdf {
+.btn--blog, .btn--journal, .btn--demo, .btn--pdf, .btn--dataset {
   background: #fff; color: var(--ink-soft); border-color: var(--line);
 }
-.btn--blog:hover, .btn--journal:hover, .btn--demo:hover, .btn--pdf:hover {
+.btn--blog:hover, .btn--journal:hover, .btn--demo:hover, .btn--pdf:hover, .btn--dataset:hover {
   border-color: var(--ink); color: var(--ink); background: var(--bg-muted);
 }
 

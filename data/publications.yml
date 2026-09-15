@@ -12,6 +12,17 @@
 #                         Defaults to "conference".
 # ─────────────────────────────────────────────────────────────
 
+- id: robo_trust_bench
+  title: "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation"
+  thumbnail: "/assets/img/publications/robo_trust_bench.png"
+  authors: ["Huiqiong Li", "Jiayu Wang", "Zhiting Mei", "Anirudha Majumdar", "Jingjing Chen", "Bin Zhu"]
+  venue: "EMNLP 2026 Findings"
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2606.01600"
+    project: "https://huiqiongli.github.io/RoboTrustBench/"
+    dataset: "https://huggingface.co/datasets/Huiqiong0124/RoboTrustBench_Dataset"
+
 - id: rethinking_safety
   status: "Under Review"
   type: preprint
@@ -43,11 +54,9 @@
   links: { arxiv: "https://arxiv.org/abs/2603.13616" }
 
 - id: playworld
-  status: "Under Review"
-  type: preprint
   title: "PlayWorld: Learning Robot World Models from Autonomous Play"
   authors: ["Tenny Yin", "Zhiting Mei", "Zhonghe Zheng", "Miyu Yamane", "David Wang", "Jade Sceats", "Samuel M. Bateman", "Lihan Zha", "Apurva Badithela", "Ola Shorinwa", "Anirudha Majumdar"]
-  venue: "Preprint"
+  venue: "Conference on Robot Learning (CoRL)"
   year: 2026
   links:
     arxiv: "https://arxiv.org/abs/2603.09030"
@@ -236,13 +245,11 @@
     code: "https://github.com/irom-princeton/spine"
 
 - id: suresim
-  status: "Under Review"
-  type: preprint
   title: "Reliable and Scalable Robot Policy Evaluation with Imperfect Simulators"
   thumbnail: "/assets/img/publications/suresim.png"
   authors: ["Apurva Badithela", "David Snyder", "Lihan Zha", "Joseph Mikhail", "Matthew O'Kelly", "Anushri Dixit", "Anirudha Majumdar"]
-  venue: "Preprint"
-  year: 2025
+  venue: "International Conference on Robotics and Automation (ICRA)"
+  year: 2026
   awards: ["Best Paper Award — Eval&Deploy Workshop at CoRL 2025"]
   links:
     pdf: "https://arxiv.org/pdf/2510.04354"
