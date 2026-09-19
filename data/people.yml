@@ -24,7 +24,6 @@ postdocs:
   - name: "Ola Sho"
     role: "Postdoctoral Researcher"
     department: "Mechanical and Aerospace Engineering"
-    website: "https://os-hash.github.io/"
 
 phd_students:
   - name: "Zhiting (May) Mei"
