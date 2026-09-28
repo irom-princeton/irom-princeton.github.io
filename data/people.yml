@@ -69,6 +69,7 @@ undergrads:
   - { name: "Micah Baker",   department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/baker_micah.jpg" }
   - { name: "Jade Sceats",   department: "Electrical and Computer Engineering",           photo: "/assets/img/people/sceats_jade.jpg" }
   - { name: "Julian Mendes", department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/mendes_julian.jpg" }
+  - { name: "Sarah Hu", department: "Mechanical and Aerospace Engineering",          photo: "/assets/img/people/hu_sarah.jpg" }
 
 alumni:
   phd:
