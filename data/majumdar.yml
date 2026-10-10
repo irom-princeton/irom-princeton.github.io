@@ -8,10 +8,8 @@ name: "Anirudha Majumdar"
 photo: "/assets/img/people/majumdar_anirudha.jpg"
 
 positions:
-  - "*Associate Professor,* [Mechanical and Aerospace Engineering](https://mae.princeton.edu/)"
-  - "*Co-Director*, Princeton Robotics Initiative"
-  - "*Associated Faculty*, [Computer Science](https://www.cs.princeton.edu/)"
-  - "[Princeton University](http://princeton.edu/)"
+  - "*Associate Professor,* [Princeton University](http://princeton.edu/)"
+  - "*Co-Director*, [Princeton Robotics Initiative](https://robotics.princeton.edu/)"
   - "*Research Scientist*, [Google DeepMind @ Princeton](https://minimizingregret.wordpress.com/people/)"
 
 contact:
@@ -21,7 +19,7 @@ contact:
 links:
   lab: "/"
   twitter: "https://twitter.com/Majumdar_Ani"
-  youtube: "https://www.youtube.com/channel/UCO5b_xm_7rynezQ4aN8SRUg"
+  youtube: "https://www.youtube.com/@intro-to-robotics"
 
 research_interests: |
   I am interested in developing generalist robots that are safe,
