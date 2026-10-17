@@ -11,15 +11,28 @@ intro: |
 sections:
   - title: "Prospective PhD students"
     body: |
-      The lab admits PhD students through the
-      [Princeton MAE](https://mae.princeton.edu/grad-program) and
-      [Princeton Computer Science](https://www.cs.princeton.edu/grad/) PhD
-      programs.
+      The lab admits PhD students primarily through the
+      [Princeton MAE](https://mae.princeton.edu/grad-program) PhD program.
+      While students can also apply through other relevant departments
+      (e.g., Computer Science and ECE), I am not directly involved with
+      the admissions in these departments and may not see your
+      application as a result.
 
-      **Apply directly to one of those programs** and mention Prof. Majumdar
-      in your statement if our work aligns with your interests. Due to the
-      volume of email, the PI is generally unable to respond to individual
-      pre-application inquiries.
+      **What undergraduate majors are represented in the lab?** PhD
+      students in our group come from a wide variety of undergraduate
+      majors: computer science, electrical engineering, mechanical,
+      aerospace, math, and physics.
+
+      **How many courses are required for the MAE PhD program?** Our
+      program is fairly light in terms of courses. Before the general
+      exam, students need to take 6 courses (with two additional courses
+      after the general exam, which can be taken pass/fail).
+
+      **Do MAE PhD students need to take core MAE courses (e.g., fluids,
+      mechanics)?** No, MAE PhD students do not need to take any courses
+      in the MAE department during the PhD. Students in our group only
+      take courses that are relevant to their research -- robotics,
+      machine learning, optimization, etc.
 
   - title: "Postdocs"
     body: |
